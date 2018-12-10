@@ -1,0 +1,143 @@
+.BackBtn-grid {
+  position: fixed;
+  bottom: 3px;
+  right: 21px;
+  display: grid;
+  grid-template-columns: 16px 16px 16px 16px 16px 16px;
+  grid-template-rows: 16px 16px 16px 16px 16px;
+}
+
+.BackBtn-diamond {
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+  border-radius: 4px;
+}
+
+.BackBtn1 {
+  background-color: #ff9052;
+  grid-column: 2;
+  grid-row: 1;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+.BackBtn2 {
+  background-color: #f95f62;
+  grid-column: 4;
+  grid-row: 1;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+.BackBtn3 {
+  background-color: #ffd185;
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.BackBtn4 {
+  background-color: #00a6ff;
+  grid-column: 3;
+  grid-row: 2;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.BackBtn5 {
+  background-color: #976dd0;
+  grid-column: 5;
+  grid-row: 2;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.BackBtn6 {
+  background-color: #13ce66;
+  grid-column: 2;
+  grid-row: 3;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.BackBtn7 {
+  background-color: #f0e3e9;
+  grid-column: 4;
+  grid-row: 3;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .BackBtn1 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .BackBtn2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .BackBtn3 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .BackBtn4 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .BackBtn5 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .BackBtn6 {
+    grid-column: 4;
+    grid-row: 4;
+  }
+
+  .BackBtn7 {
+    grid-column: 3;
+    grid-row: 5;
+  }
+
+  .BackBtn-grid {
+    bottom: 35px;
+    right: 5px;
+  }
+}

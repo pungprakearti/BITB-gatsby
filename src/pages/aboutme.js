@@ -70,7 +70,9 @@ export default class AboutMePage extends Component {
             industry for 10 years.
           </p>
           <div className="AboutMe-center">
-            <a href="http://www.imdb.com">Check out my IMDB page</a>
+            <a href="https://www.imdb.com/name/nm3117059">
+              Check out my IMDB page
+            </a>
           </div>
 
           <p>

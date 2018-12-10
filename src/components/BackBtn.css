@@ -12,6 +12,7 @@
   height: 20px;
   transform: rotate(-45deg);
   border-radius: 4px;
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .BackBtn1 {

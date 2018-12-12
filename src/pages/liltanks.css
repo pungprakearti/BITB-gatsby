@@ -1,0 +1,34 @@
+.LilTanks-cont {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 2em;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.LilTanks-cont > p {
+  text-indent: 50px;
+}
+
+img {
+  border-radius: 15px;
+  box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.5);
+  width: 75%;
+}
+
+.LilTanks-center {
+  text-align: center;
+  margin-bottom: 1em;
+}

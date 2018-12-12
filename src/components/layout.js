@@ -45,7 +45,14 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <NavBar colorName={colors.white} colorTitle={colors.blue} />
-        <div>{children}</div>
+        <div className="Layout-cont">
+          <div className="Layout-child-cont">{children}</div>
+          <div className="Layout-bg-cont">
+            <div className="Layout-bg1" />
+            <div className="Layout-bg2" />
+            <div className="Layout-bg3" />
+          </div>
+        </div>
       </>
     )}
   />

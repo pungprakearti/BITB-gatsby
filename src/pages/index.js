@@ -98,67 +98,27 @@ export default class IndexPage extends Component {
         image: this.props.data.imgContact.publicURL,
       },
     ]
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
-    this.setState(
-      st => ({
-        show: false,
-      }),
-      this.delay()
-    )
-    console.log('click')
-  }
-
-  delay() {
-    // setTimeout(() => console.log('boom'), 1000)
-    // let stateObj = { index: 'index.html' }
-    // setTimeout(
-    //   () => window.history.pushState(stateObj, 'asdf', '404.html'),
-    //   1000
-    // )
-    setTimeout(() => <Link to="/404/">hi</Link>, 1000)
   }
 
   render() {
     return (
       <Layout>
-        <div className="Home-cont">
-          <div className="Home-grid">
-            {this.state.show
-              ? this.sections.map(section => {
-                  return (
-                    <div
-                      id={section.id}
-                      onClick={this.handleClick}
-                      key={section.id}
-                    >
-                      <SectionIcon
-                        color={section.color}
-                        image={section.image}
-                        id={section.id}
-                        fadeOut={false}
-                      />
-                    </div>
-                  )
-                })
-              : this.sections.map(section => {
-                  return (
-                    <div
-                      id={section.id}
-                      onClick={this.handleClick}
-                      key={section.id}
-                    >
-                      <SectionIcon
-                        color={section.color}
-                        image={section.image}
-                        id={section.id}
-                        fadeOut={true}
-                      />
-                    </div>
-                  )
-                })}
+        <div className="Index-cont">
+          {/* <div className="test1" />
+          <div className="test2" />
+          <div className="test3" /> */}
+          <div className="Index-grid">
+            {this.sections.map(section => {
+              return (
+                <div id={section.id} key={section.id}>
+                  <SectionIcon
+                    color={section.color}
+                    image={section.image}
+                    id={section.id}
+                  />
+                </div>
+              )
+            })}
           </div>
         </div>
       </Layout>

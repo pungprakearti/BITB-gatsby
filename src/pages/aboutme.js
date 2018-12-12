@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import './aboutme.css'
+// import './aboutme.css'
 import BackBtn from '../components/BackBtn'
 
 export const query = graphql`
@@ -46,7 +46,11 @@ export default class AboutMePage extends Component {
   render() {
     return (
       <Layout>
-        <div className="AboutMe-cont" style={{ color: this.colors.white }}>
+        <div className="content-cont" style={{ color: this.colors.white }}>
+          <p>
+            I'm a full stack developer currently attending Rithm School's eighth
+            cohort. add more info here
+          </p>
           <p>
             I'm half of Lead Money Games, an independent game development
             company. On June 15, 2016 we were funded through Kickstarter and on
@@ -54,7 +58,7 @@ export default class AboutMePage extends Component {
             Tanks." It's a little shoot 'em up game that was purely engineered
             through trial and error and lots of online tutorials.
           </p>
-          <div className="AboutMe-center">
+          <div className="content-center">
             <Link to="liltanks">Lil Tanks</Link>
           </div>
           <p>
@@ -69,7 +73,7 @@ export default class AboutMePage extends Component {
             forty films. This is a vestige of my former life working in the film
             industry for 10 years.
           </p>
-          <div className="AboutMe-center">
+          <div className="content-center">
             <a href="https://www.imdb.com/name/nm3117059">
               Check out my IMDB page
             </a>
@@ -86,12 +90,12 @@ export default class AboutMePage extends Component {
             adorable children: Theo and Violet.
             <br />
           </p>
-          <div className="AboutMe-center">
+          <div className="content-center">
             <a href="https://imgur.com/gallery/ZMZOU">
               DITL of an indie game developer
             </a>
           </div>
-          <div className="AboutMe-center">
+          <div className="content-center">
             <img
               src={this.props.data.imgFamily.childImageSharp.fluid.src}
               alt="Mi familia"

@@ -1,0 +1,35 @@
+.Contact-cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.Contact-icons-cont {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.icon-facebook,
+.icon-linkedin,
+.icon-instagram,
+.icon-twitter {
+  font-size: 50px;
+}
+
+.icon-facebook {
+  color: #00a6ff;
+}
+.icon-linkedin {
+  color: #13ce66;
+}
+.icon-instagram {
+  color: #ff9052;
+}
+.icon-twitter {
+  color: #976dd0;
+}

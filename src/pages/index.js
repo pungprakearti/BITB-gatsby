@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SectionIcon from '../components/SectionIcon'
@@ -104,9 +103,6 @@ export default class IndexPage extends Component {
     return (
       <Layout>
         <div className="Index-cont">
-          {/* <div className="test1" />
-          <div className="test2" />
-          <div className="test3" /> */}
           <div className="Index-grid">
             {this.sections.map(section => {
               return (

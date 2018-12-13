@@ -46,6 +46,7 @@ h2 {
   width: 500px;
   margin: 0 auto;
   margin-top: 2em;
+  margin-bottom: 5em;
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 1s;
@@ -105,33 +106,33 @@ img {
 .Layout-bg3 {
   position: absolute;
   margin-top: -15px;
-  border-radius: 25px;
   transform: rotate(-45deg);
 }
 
 .Layout-bg1 {
-  width: 700px;
-  height: 700px;
+  width: 550px;
+  height: 550px;
   border: 50px solid rgba(35, 54, 86, 0.1);
 }
 .Layout-bg2 {
   width: 1000px;
   height: 1000px;
   border: 10px solid rgba(35, 54, 86, 0.1);
-  animation-duration: 30s;
+  animation-duration: 5s;
   animation-name: grow2;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes grow2 {
   from {
-    width: 1200px;
-    height: 1200px;
+    width: 1000px;
+    height: 1000px;
   }
   to {
-    width: 500px;
-    height: 500px;
+    width: 649px;
+    height: 649px;
   }
 }
 
@@ -139,16 +140,17 @@ img {
   width: 1400px;
   height: 1400px;
   border: 100px solid rgba(35, 54, 86, 0.1);
-  animation-duration: 30s;
+  animation-duration: 5s;
   animation-name: grow3;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes grow3 {
   from {
-    width: 1200px;
-    height: 1200px;
+    width: 1020px;
+    height: 1020px;
   }
   to {
     width: 1500px;

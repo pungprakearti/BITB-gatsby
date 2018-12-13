@@ -32,3 +32,31 @@ img {
   text-align: center;
   margin-bottom: 1em;
 }
+
+.LilTanks-icons-cont {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.icon-steam,
+.icon-windows,
+.icon-linux,
+.icon-mac {
+  font-size: 50px;
+}
+
+.icon-steam {
+  color: #00a6ff;
+}
+.icon-windows {
+  color: #13ce66;
+}
+.icon-linux {
+  color: #ff9052;
+}
+.icon-mac {
+  color: #976dd0;
+}

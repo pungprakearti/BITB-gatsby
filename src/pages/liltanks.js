@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-// import './liltanks.css'
 import BackBtn from '../components/BackBtn'
+import { FaSteam, FaWindows, FaLinux, FaApple } from 'react-icons/fa'
 
 export const query = graphql`
   {
@@ -81,6 +80,14 @@ export default class LilTanksPage extends Component {
             >
               Learn more about Lead Money Games here
             </a>
+            <br />
+            <br />
+            <div className="LilTanks-icons-cont">
+              <FaSteam className="icon-steam" />{' '}
+              <FaWindows className="icon-windows" />{' '}
+              <FaLinux className="icon-linux" />{' '}
+              <FaApple className="icon-apple" />
+            </div>
           </div>
         </div>
         <BackBtn />

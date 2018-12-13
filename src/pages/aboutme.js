@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-// import './aboutme.css'
 import BackBtn from '../components/BackBtn'
 
 export const query = graphql`
@@ -47,31 +46,40 @@ export default class AboutMePage extends Component {
     return (
       <Layout>
         <div className="content-cont" style={{ color: this.colors.white }}>
+          <div className="content-center">
+            <img
+              src={this.props.data.imgAboutMe.childImageSharp.fluid.src}
+              alt="Such a handsome fellow. Also, very very humble."
+            />
+          </div>
           <p>
             I'm a full stack developer currently attending Rithm School's eighth
-            cohort. add more info here
+            cohort. From school I've learned that I'm a huge fan of React, CSS,
+            and just working on the front end in general. I love being able to
+            create apps that look exactly like I envision them.
           </p>
           <p>
-            I'm half of Lead Money Games, an independent game development
-            company. On June 15, 2016 we were funded through Kickstarter and on
-            April 4, 2017 we launched our first game on Steam called "Lil
-            Tanks." It's a little shoot 'em up game that was purely engineered
-            through trial and error and lots of online tutorials.
+            Outside of web development, I enjoy making games. I'm half of Lead
+            Money Games, an independent game development company. On June 15,
+            2016 we were funded through Kickstarter and on April 4, 2017 we
+            launched our first game on Steam called "Lil Tanks." It's a little
+            shoot 'em up game that was purely engineered through trial and error
+            and lots of online tutorials.
           </p>
           <div className="content-center">
             <Link to="liltanks">Lil Tanks</Link>
           </div>
           <p>
             After a few years of game development, I decided it's time for me to
-            throw myself into full fledged software engineering. I've always
-            loved the intersection of computers and art and I'm excited to see
-            where this takes me.
+            throw myself into full fledged web development. I've always loved
+            the intersection of computers and art and I'm excited to see where
+            this takes me.
           </p>
 
           <p>
             I also freelance as a digital effects artist having worked on over
             forty films. This is a vestige of my former life working in the film
-            industry for 10 years.
+            industry for over 10 years.
           </p>
           <div className="content-center">
             <a href="https://www.imdb.com/name/nm3117059">

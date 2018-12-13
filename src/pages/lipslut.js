@@ -49,9 +49,10 @@ export default class LipslutPage extends Component {
             companies. I worked on www.lipslut.com which is a really cool
             JAMstack built with Gatsby on React. During my time on Lipslut, I
             refactored an existing code base to fetch data from APIs such as
-            Contentful using GraphQL queries. This data was then used to
-            dynamically create elements at build time. I also created some
-            awesome data visualization using sales data from various states.
+            Contentful and Shopify using GraphQL queries. This data was then
+            used to dynamically create elements at build time. I also created
+            some awesome data visualization using sales data from various
+            states.
             <br />
           </p>
           <div className="content-center">

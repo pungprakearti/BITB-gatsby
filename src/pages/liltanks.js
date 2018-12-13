@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
 import { FaSteam, FaWindows, FaLinux, FaApple } from 'react-icons/fa'
+import './liltanks.css'
 
 export const query = graphql`
   {
@@ -83,9 +84,9 @@ export default class LilTanksPage extends Component {
             <br />
             <br />
             <div className="LilTanks-icons-cont">
-              <FaSteam className="icon-steam" />{' '}
-              <FaWindows className="icon-windows" />{' '}
-              <FaLinux className="icon-linux" />{' '}
+              <FaSteam className="icon-steam" />
+              <FaWindows className="icon-windows" />
+              <FaLinux className="icon-linux" />
               <FaApple className="icon-apple" />
             </div>
           </div>

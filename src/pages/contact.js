@@ -71,7 +71,7 @@ export default class ConnectPage extends Component {
                   <FaTwitterSquare className="icon-twitter" />
                 </a>
               </div>
-              <div>
+              <div className="Contact-tweet">
                 <TwitterTweetEmbed tweetId={'1058537258129584130'} />
               </div>
             </div>

@@ -44,7 +44,7 @@ img {
 .icon-steam,
 .icon-windows,
 .icon-linux,
-.icon-mac {
+.icon-apple {
   font-size: 50px;
 }
 
@@ -57,6 +57,6 @@ img {
 .icon-linux {
   color: #ff9052;
 }
-.icon-mac {
+.icon-apple {
   color: #976dd0;
 }

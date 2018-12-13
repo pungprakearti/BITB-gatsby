@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './AlgoSpiral.css'
+import SpiralTable from './SpiralTable'
 
 /************************************************
  * spiral takes an integer as a parameter and console.logs
@@ -11,7 +12,7 @@ import './AlgoSpiral.css'
 function spiral(spaces) {
   let dir = 0 //direction to move
   let pos = [-1, 0] //current position: (-1, 0) is starting off the board
-  let log = '' //string log for testing
+  let log = '' //string log for testing <-------------- FIX HERE
 
   //first straight path
   for (let i = 0; i < spaces; i++) {
@@ -57,7 +58,8 @@ function move(dir, pos) {
 
 function printAndLog(pos) {
   console.log(`(${pos[0]}, ${pos[1]})`)
-  return `(${pos[0]}, ${pos[1]})\n`
+  // return `(${pos[0]}, ${pos[1]})\n`
+  return [pos[0], pos[1]]
 }
 
 /************************************************/
@@ -66,7 +68,7 @@ export default class AlgoSpiral extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: [0, 0, 0, 0, 0],
+      show: [0, 0, 0, 0, 0, 0, 0, 0, 0],
     }
 
     this.colors = {
@@ -106,9 +108,14 @@ export default class AlgoSpiral extends Component {
       </div>
     )
   }
+
   render() {
+    let log2 = spiral(2)
+    console.log(log2)
+    // let interval = setInterval()
     return (
       <div className="AlgoSpiral-cont">
+        <SpiralTable num={2} color={this.colors.red} cell={[0, 0]} />
         {this.createTableElem(2, this.colors.red)}
         {this.createTableElem(3, this.colors.orange)}
         {this.createTableElem(4, this.colors.yellow)}

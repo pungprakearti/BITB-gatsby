@@ -1,0 +1,18 @@
+.AlgoSpiral-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.AlgoSpiral-table {
+  border: 1px dotted red;
+  margin: 5px;
+}
+
+.AlgoSpiral-table > tbody > tr > td {
+  width: 16px;
+  height: 16px;
+  border: 1px solid red;
+}

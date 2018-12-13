@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
+import AlgoSpiral from '../components/AlgoSpiral'
 
 export const query = graphql`
   {
@@ -15,7 +16,7 @@ export const query = graphql`
   }
 `
 
-export default class LipslutPage extends Component {
+export default class AlgorithmsPage extends Component {
   constructor(props) {
     super(props)
 
@@ -38,16 +39,11 @@ export default class LipslutPage extends Component {
     return (
       <Layout>
         <div className="content-cont" style={{ color: this.colors.white }}>
-          <div className="content-center">
-            <img
-              src={this.props.data.imgLipslut.childImageSharp.fluid.src}
-              alt="Lips"
-            />
-          </div>
           <p>
             A place to show off algorithms with visualization.
             <br />
           </p>
+          <AlgoSpiral />
         </div>
         <BackBtn />
       </Layout>

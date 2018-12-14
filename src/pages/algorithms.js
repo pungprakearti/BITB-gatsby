@@ -43,11 +43,9 @@ export default class AlgorithmsPage extends Component {
             entire grid stopping in the middle.
           </p>
           <AlgoSpiral />
-          <br />
-          <div className="content-center">
-            <h2>Leveret</h2>
-          </div>
-          <Leveret />
+          {/* <br /> */}
+          {/* <div className="content-center"><h2>Leveret</h2></div> */}
+          {/* <Leveret /> */}
         </div>
         <BackBtn />
       </Layout>

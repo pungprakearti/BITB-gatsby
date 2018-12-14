@@ -21,16 +21,19 @@
 }
 
 .icon-facebook {
-  color: #00a6ff;
-}
-.icon-linkedin {
   color: #13ce66;
 }
-.icon-instagram {
-  color: #ff9052;
+
+.icon-linkedin {
+  color: #00a6ff;
 }
-.icon-twitter {
+
+.icon-instagram {
   color: #976dd0;
+}
+
+.icon-twitter {
+  color: #ff9052;
 }
 
 .Contact-tweet {

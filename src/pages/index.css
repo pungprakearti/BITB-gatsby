@@ -1,7 +1,7 @@
 .Index-cont {
   display: flex;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 45px);
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -93,45 +93,72 @@
   }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+.Index-kitten1 > img,
+.Index-kitten2 > img {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
-/* .test1,
-.test2,
-.test3 {
+.Index-kitten1 {
   position: absolute;
-  margin-top: -15px;
-  border-radius: 25px;
+  width: 500px;
+  height: 500px;
+  bottom: -55px;
+  right: -95px;
+  overflow: hidden;
   transform: rotate(-45deg);
+  transition: all 0.25s linear;
 }
 
-.test1 {
-  width: 700px;
-  height: 700px;
-  border: 50px solid rgba(35, 54, 86, 0.1);
+.Index-kitten1 > img {
+  position: absolute;
+  width: 50em;
+  bottom: -50px;
+  right: 0;
+  transform: translateX(350px) rotate(45deg);
 }
-.test2 {
-  width: 1000px;
-  height: 1000px;
-  border: 10px solid rgba(35, 54, 86, 0.1);
-}
-.test3 {
-  width: 1400px;
-  height: 1400px;
-  border: 100px solid rgba(35, 54, 86, 0.1);
-} */
 
-.fadeOut {
-  opacity: 1;
-  animation-name: fadeOut;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
+.Index-kitten-right {
+  transform: translate(400px, 450px);
+}
+
+.Index-kitten2 {
+  position: absolute;
+  width: 600px;
+  bottom: -100px;
+  left: -200px;
+  transform: rotate(-20deg);
+  overflow: hidden;
+  transition: all 0.25s linear;
+}
+
+.Index-kitten2 > img {
+  transform: scale(1.25) translateX(80px) rotate(20deg);
+}
+
+.Index-kitten-left {
+  transform: translate(-400px, 300px);
+}
+
+@media only screen and (max-width: 1200px) {
+  .Index-kitten1 {
+    bottom: -75px;
+    right: -125px;
+    transform: scale(0.9) rotate(-45deg);
+  }
+
+  .Index-kitten-right {
+    transform: translate(375px, 425px);
+  }
+
+  .Index-kitten2 {
+    bottom: -100px;
+    left: -200px;
+    transform: scale(0.9) rotate(-20deg);
+  }
+
+  .Index-kitten-left {
+    transform: translate(-400px, 300px);
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -174,5 +201,25 @@
   #contact {
     grid-column: 3;
     grid-row: 5;
+  }
+
+  .Index-kitten1 {
+    bottom: -100px;
+    right: -150px;
+    transform: scale(0.75) rotate(-45deg);
+  }
+
+  .Index-kitten-right {
+    transform: translate(350px, 400px);
+  }
+
+  .Index-kitten2 {
+    bottom: -150px;
+    left: -225px;
+    transform: scale(0.75) rotate(-20deg);
+  }
+
+  .Index-kitten-left {
+    transform: translate(-375px, 250px);
   }
 }

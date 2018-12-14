@@ -49,14 +49,17 @@ img {
 }
 
 .icon-steam {
-  color: #00a6ff;
-}
-.icon-windows {
   color: #13ce66;
 }
-.icon-linux {
-  color: #ff9052;
+
+.icon-windows {
+  color: #00a6ff;
 }
-.icon-apple {
+
+.icon-linux {
   color: #976dd0;
+}
+
+.icon-apple {
+  color: #ff9052;
 }

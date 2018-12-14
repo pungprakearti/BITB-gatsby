@@ -7,11 +7,6 @@ html {
 
 body {
   margin: 0;
-  font-size: 20px;
-}
-
-body {
-  margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,6 +15,7 @@ body {
   min-height: 100vh;
   height: 100%;
   font-family: 'Raleway', sans-serif;
+  font-size: 20px;
 }
 
 a {
@@ -81,12 +77,12 @@ img {
 .Layout-cont {
   position: relative;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 45px);
 }
 
 .Layout-child-cont {
   overflow: auto;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 45px);
 }
 
 .Layout-bg-cont {
@@ -98,7 +94,7 @@ img {
   overflow: hidden;
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: -5;
 }
 
 .Layout-bg1,

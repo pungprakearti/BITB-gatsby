@@ -26,18 +26,28 @@ export const query = graphql`
     imgJobly: file(relativePath: { eq: "img_jobly.gif" }) {
       publicURL
     }
-    imgResume: file(relativePath: { eq: "img_resume.png" }) {
-      childImageSharp {
-        fluid {
-          src
-        }
-      }
+    imgResume: file(relativePath: { eq: "img_resume.gif" }) {
+      publicURL
     }
     imgContact: file(relativePath: { eq: "img_contact.gif" }) {
       publicURL
     }
     imgAlgorithms: file(relativePath: { eq: "img_algorithms.gif" }) {
       publicURL
+    }
+    imgKitten1: file(relativePath: { eq: "img_kitten1.png" }) {
+      childImageSharp {
+        fluid {
+          src
+        }
+      }
+    }
+    imgKitten2: file(relativePath: { eq: "img_kitten2.png" }) {
+      childImageSharp {
+        fluid {
+          src
+        }
+      }
     }
   }
 `
@@ -48,6 +58,7 @@ export default class IndexPage extends Component {
 
     this.state = {
       show: true,
+      kittens: false,
     }
 
     this.colors = {
@@ -89,7 +100,7 @@ export default class IndexPage extends Component {
       {
         id: 'resume',
         color: this.colors.green,
-        image: this.props.data.imgResume.childImageSharp.fluid.src,
+        image: this.props.data.imgResume.publicURL,
       },
       {
         id: 'contact',
@@ -97,6 +108,18 @@ export default class IndexPage extends Component {
         image: this.props.data.imgContact.publicURL,
       },
     ]
+
+    this.handleKittens = this.handleKittens.bind(this)
+  }
+
+  handleKittens() {
+    this.state.kittens
+      ? this.setState({
+          kittens: false,
+        })
+      : this.setState({
+          kittens: true,
+        })
   }
 
   render() {
@@ -105,17 +128,65 @@ export default class IndexPage extends Component {
         <div className="Index-cont">
           <div className="Index-grid">
             {this.sections.map(section => {
-              return (
-                <div id={section.id} key={section.id}>
-                  <SectionIcon
-                    color={section.color}
-                    image={section.image}
-                    id={section.id}
-                  />
-                </div>
-              )
+              if (section.id === 'contact') {
+                return (
+                  <div id={section.id} key={section.id}>
+                    <SectionIcon
+                      color={section.color}
+                      image={section.image}
+                      id={section.id}
+                      handleKittens={this.handleKittens}
+                    />
+                  </div>
+                )
+              } else {
+                return (
+                  <div id={section.id} key={section.id}>
+                    <SectionIcon
+                      color={section.color}
+                      image={section.image}
+                      id={section.id}
+                    />
+                  </div>
+                )
+              }
             })}
           </div>
+          {this.state.kittens ? (
+            <React.Fragment>
+              <div className="Index-kitten1">
+                <img
+                  src={this.props.data.imgKitten1.childImageSharp.fluid.src}
+                  alt="yellow kitten raising the roof"
+                  id="index-kitten1"
+                />
+              </div>
+              <div className="Index-kitten2">
+                <img
+                  src={this.props.data.imgKitten2.childImageSharp.fluid.src}
+                  alt="black cat chillin"
+                  id="index-kitten2"
+                />
+              </div>
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              <div className="Index-kitten1 Index-kitten-right">
+                <img
+                  src={this.props.data.imgKitten1.childImageSharp.fluid.src}
+                  alt="yellow kitten raising the roof"
+                  id="index-kitten1"
+                />
+              </div>
+              <div className="Index-kitten2 Index-kitten-left">
+                <img
+                  src={this.props.data.imgKitten2.childImageSharp.fluid.src}
+                  alt="black cat chillin"
+                  id="index-kitten2"
+                />
+              </div>
+            </React.Fragment>
+          )}
         </div>
       </Layout>
     )

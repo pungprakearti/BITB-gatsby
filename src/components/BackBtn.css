@@ -5,6 +5,15 @@
   display: grid;
   grid-template-columns: 16px 16px 16px 16px 16px 16px;
   grid-template-rows: 16px 16px 16px 16px 16px;
+  transition: all 0.1s ease;
+}
+
+.BackBtn-grid:hover {
+  transform: translateY(2px);
+}
+
+.BackBtn-grid:hover > .BackBtn-diamond {
+  box-shadow: -2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 .BackBtn-diamond {
@@ -12,7 +21,8 @@
   height: 20px;
   transform: rotate(-45deg);
   border-radius: 4px;
-  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
 }
 
 .BackBtn1 {

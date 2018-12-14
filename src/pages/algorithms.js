@@ -31,7 +31,7 @@ export default class AlgorithmsPage extends Component {
         <div className="content-cont" style={{ color: this.colors.white }}>
           <p>
             Here's some algorithms that I found challenging and that I thought
-            would look cool visualized
+            would look cool visualized.
           </p>
           <br />
           <div className="content-center">

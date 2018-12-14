@@ -5,12 +5,8 @@ import BackBtn from '../components/BackBtn'
 
 export const query = graphql`
   {
-    imgLipslut: file(relativePath: { eq: "img_lipslut.jpg" }) {
-      childImageSharp {
-        fluid {
-          src
-        }
-      }
+    imgLSDV: file(relativePath: { eq: "img_lsdv.gif" }) {
+      publicURL
     }
   }
 `
@@ -40,8 +36,8 @@ export default class LipslutPage extends Component {
         <div className="content-cont" style={{ color: this.colors.white }}>
           <div className="content-center">
             <img
-              src={this.props.data.imgLipslut.childImageSharp.fluid.src}
-              alt="Lips"
+              src={this.props.data.imgLSDV.publicURL}
+              alt="An animated gif of the US with states colored based off of sales"
             />
           </div>
           <p>

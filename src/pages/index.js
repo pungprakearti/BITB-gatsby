@@ -68,7 +68,7 @@ export default class IndexPage extends Component {
       green: '#13CE66',
       blue: '#00A6FF',
       purple: '#976DD0',
-      white: '#F0E3E9',
+      white: 'white', //'#F0E3E9',
     }
 
     this.sections = [

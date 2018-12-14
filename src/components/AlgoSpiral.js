@@ -3,21 +3,21 @@ import './AlgoSpiral.css'
 import SpiralTable from './SpiralTable'
 
 /************************************************
- * spiral takes an integer as a parameter and console.logs
- * the traveled path of a spiral through a matrix of (x, y)
- * positions. The integer represents the length of the first
- * path before turning
+ * spiral takes an integer as a parameter and logs the
+ * traveled path of a spiral through a matrix of (x, y)
+ * positions. The integer represents the length of the
+ * first path before turning
  ***********************************************/
 
 function spiral(spaces) {
   let dir = 0 //direction to move
   let pos = [-1, 0] //current position: (-1, 0) is starting off the board
-  let log = '' //string log for testing <-------------- FIX HERE
+  let log = []
 
   //first straight path
   for (let i = 0; i < spaces; i++) {
     move(dir, pos)
-    log += printAndLog(pos)
+    log.push(logPos(pos))
   }
   //change direction - if dir is 4, restart at 0
   dir = ++dir % 4
@@ -32,7 +32,7 @@ function spiral(spaces) {
       //move number of spaces and log each time
       for (let k = 0; k < spaces; k++) {
         move(dir, pos)
-        log += printAndLog(pos)
+        log.push(logPos(pos))
       }
       //change direction
       dir = ++dir % 4
@@ -56,9 +56,7 @@ function move(dir, pos) {
   if (dir === 3) pos[1]--
 }
 
-function printAndLog(pos) {
-  console.log(`(${pos[0]}, ${pos[1]})`)
-  // return `(${pos[0]}, ${pos[1]})\n`
+function logPos(pos) {
   return [pos[0], pos[1]]
 }
 
@@ -68,8 +66,9 @@ export default class AlgoSpiral extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: [0, 0, 0, 0, 0, 0, 0, 0, 0],
+      show: [0, 0, 0, 0, 0, 0],
     }
+    this.movePos = this.movePos.bind(this)
 
     this.colors = {
       red: '#F95F62',
@@ -82,49 +81,73 @@ export default class AlgoSpiral extends Component {
     }
   }
 
-  createTableElem(num, color) {
-    let rows = []
-    for (let r = 0; r < num; r++) {
-      let cols = []
-      for (let c = 0; c < num; c++) {
-        cols.push(
-          <td
-            id={`AlgoSpiral-table${num}-${c}-${r}`}
-            style={{ borderColor: color }}
-          />
-        )
-      }
-      rows.push(<tr>{cols}</tr>)
-    }
+  componentDidMount() {
+    this.intervalID = setInterval(this.movePos, 100)
+    console.log('started interval')
+  }
 
-    return (
-      <div className={`AlgoSpiral-table${num}-cont`}>
-        <table
-          className={`AlgoSpiral-table AlgoSpiral-table${num}`}
-          style={{ borderColor: color }}
-        >
-          <tbody>{rows}</tbody>
-        </table>
-      </div>
-    )
+  componentWillUnmount() {
+    clearInterval(this.intervalID)
+    console.log('killed interval')
+  }
+
+  movePos() {
+    //moves the position to the next cell
+    this.setState(st => {
+      return {
+        show: [
+          ++st.show[0] % 4,
+          ++st.show[1] % 9,
+          ++st.show[2] % 16,
+          ++st.show[3] % 25,
+          ++st.show[4] % 36,
+          ++st.show[5] % 100,
+        ],
+      }
+    })
   }
 
   render() {
+    //get logs of spiral movement
     let log2 = spiral(2)
-    console.log(log2)
-    // let interval = setInterval()
+    let log3 = spiral(3)
+    let log4 = spiral(4)
+    let log5 = spiral(5)
+    let log6 = spiral(6)
+    let log10 = spiral(10)
+
     return (
       <div className="AlgoSpiral-cont">
-        <SpiralTable num={2} color={this.colors.red} cell={[0, 0]} />
-        {this.createTableElem(2, this.colors.red)}
-        {this.createTableElem(3, this.colors.orange)}
-        {this.createTableElem(4, this.colors.yellow)}
-        {this.createTableElem(5, this.colors.green)}
-        {this.createTableElem(6, this.colors.blue)}
-        {this.createTableElem(7, this.colors.purple)}
-        {this.createTableElem(8, this.colors.white)}
-        {this.createTableElem(9, this.colors.red)}
-        {this.createTableElem(10, this.colors.orange)}
+        <SpiralTable
+          num={2}
+          color={this.colors.red}
+          cell={log2[this.state.show[0]]}
+        />
+        <SpiralTable
+          num={3}
+          color={this.colors.orange}
+          cell={log3[this.state.show[1]]}
+        />
+        <SpiralTable
+          num={4}
+          color={this.colors.yellow}
+          cell={log4[this.state.show[2]]}
+        />
+        <SpiralTable
+          num={5}
+          color={this.colors.green}
+          cell={log5[this.state.show[3]]}
+        />
+        <SpiralTable
+          num={6}
+          color={this.colors.blue}
+          cell={log6[this.state.show[4]]}
+        />
+        <SpiralTable
+          num={10}
+          color={this.colors.white}
+          cell={log10[this.state.show[5]]}
+        />
       </div>
     )
   }

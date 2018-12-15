@@ -223,3 +223,54 @@
     transform: translate(-375px, 250px);
   }
 }
+
+@media only screen and (max-width: 415px) {
+  .Index-cont {
+    display: block;
+    width: 320px;
+    height: calc(100vh - 45px);
+    overflow: auto;
+  }
+
+  .Index-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0px 105px 105px;
+    grid-template-rows: 0px 105px 105px 105px 105px 105px 105px;
+  }
+
+  #aboutMe {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #lilTanks {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  #jobly {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  #lipslut {
+    grid-column: 3;
+    grid-row: 5;
+  }
+
+  #algorithms {
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  #resume {
+    grid-column: 3;
+    grid-row: 7;
+  }
+
+  #contact {
+    grid-column: 2;
+    grid-row: 8;
+  }
+}

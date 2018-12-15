@@ -38,3 +38,33 @@
 .NavBar-right-link {
   margin: 0.5em;
 }
+
+@media only screen and (max-width: 415px) {
+  .NavBar-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .NavBar-icon-home {
+    font-size: 50px;
+    margin-left: 10px;
+    color: #13ce66;
+  }
+
+  .NavBar-icon-resume {
+    font-size: 40px;
+    color: #00a6ff;
+  }
+
+  .NavBar-icon-github {
+    font-size: 45px;
+    color: #976dd0;
+  }
+
+  .NavBar-icon-contact {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #ff9052;
+  }
+}

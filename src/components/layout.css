@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  /* -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
 }
 
 body {
@@ -151,5 +151,18 @@ img {
   to {
     width: 1500px;
     height: 1500px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .Layout-cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Layout-child-cont {
+    /* display: block; */
+    width: 320px;
+    border: 1px solid red;
   }
 }

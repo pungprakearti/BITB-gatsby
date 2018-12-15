@@ -15,18 +15,14 @@ export default class SectionIcon extends Component {
     return (
       <Link to={`/${this.props.id.toLowerCase()}`}>
         <div
-          className="SectionIcon-cont" //{
-          //   this.props.fadeOut
-          //     ? 'SectionIcon-cont fadeOut'
-          //     : 'SectionIcon-cont fadeIn'
-          // }
+          className="SectionIcon-cont"
           onMouseEnter={this.handleMouseEnter}
           onMouseLeave={this.handleMouseEnter}
         >
           <div
             className="SectionIcon-outer-cont"
             style={{
-              backgroundColor: 'rgba(0, 0, 0, 0)', //this.props.color,
+              backgroundColor: this.props.color,
             }}
           >
             <img

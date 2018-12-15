@@ -9,6 +9,8 @@
 }
 
 .Index-grid {
+  padding-left: 100px;
+  padding-bottom: 65px;
   display: grid;
   grid-template-columns: 125px 125px 125px 125px 125px 125px;
   grid-template-rows: 125px 125px 125px;

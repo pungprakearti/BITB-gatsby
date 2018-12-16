@@ -236,6 +236,8 @@
 
   .Index-grid {
     width: 100%;
+    padding-left: 32.5px;
+    padding-top: 40px;
     display: grid;
     grid-template-columns: 0px 105px 105px;
     grid-template-rows: 0px 105px 105px 105px 105px 105px 105px;

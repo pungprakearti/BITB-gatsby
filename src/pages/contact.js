@@ -77,7 +77,7 @@ export default class ConnectPage extends Component {
             </div>
           </div>
         </div>
-        <BackBtn />
+        {window.innerWidth <= 415 ? '' : <BackBtn />}
       </Layout>
     )
   }

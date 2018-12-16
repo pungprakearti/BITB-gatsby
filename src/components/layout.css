@@ -158,11 +158,41 @@ img {
   .Layout-cont {
     display: flex;
     justify-content: center;
+    height: calc(100% - 55px);
   }
 
   .Layout-child-cont {
-    /* display: block; */
     width: 320px;
-    border: 1px solid red;
+    height: calc(100% - 1px);
+  }
+
+  .Layout-bg-cont {
+    height: calc(100% - 55px);
+  }
+
+  .content-cont {
+    width: 100%;
+  }
+
+  #___gatsby {
+    height: 100%;
+  }
+
+  #___gatsby > div {
+    height: 100%;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+
+  iframe {
+    position: relative;
+  }
+
+  article {
+    position: relative;
   }
 }

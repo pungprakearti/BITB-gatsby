@@ -47,16 +47,6 @@
 
 @media only screen and (max-width: 415px) {
   .SectionIcon-cont {
-    /* margin: 35px;
-    margin-top: 50px;
-    width: 150px;
-    transform: scale(0.95) rotate(-45deg);
-    border: 1px solid red; */
-  }
-  /* section icon cont is just a thin div with margins.
-  The margins and messing up the bounding box and making
-  clicking no accurate*/
-  .SectionIcon-outer-cont {
-    transform: rotate(90deg);
+    transform: rotate(-45deg) scale(0.95);
   }
 }

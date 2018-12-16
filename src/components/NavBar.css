@@ -1,8 +1,13 @@
-.NavBar-cont {
+.NavBar-mobile {
+  visibility: hidden;
+}
+
+.NavBar-desktop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: rgba(35, 54, 86, 0.1);
+  visibility: visible;
 }
 .NavBar-left {
   display: flex;
@@ -40,11 +45,17 @@
 }
 
 @media only screen and (max-width: 415px) {
-  .NavBar-cont {
+  .NavBar-desktop {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .NavBar-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
+    visibility: visible;
   }
 
   .NavBar-icon-home {

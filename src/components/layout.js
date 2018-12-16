@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
@@ -15,6 +15,24 @@ const colors = {
   white: '#F0E3E9',
 }
 
+export default class Layout extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      windowWidth: 0,
+    }
+  }
+
+  componentDidMount() {
+    this.setState({ windowWidth: window.innerWidth })
+  }
+
+  render() {
+    return this.state.windowWidth
+  }
+}
+
+/*
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -63,3 +81,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+*/

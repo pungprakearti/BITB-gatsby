@@ -205,3 +205,8 @@ export default class IndexPage extends Component {
     )
   }
 }
+
+/*
+
+component did mount to check for window. Or else no check and everything is fucking fucked fuck.
+*/

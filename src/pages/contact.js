@@ -45,6 +45,13 @@ export default class ConnectPage extends Component {
   }
 
   render() {
+    let backbtn
+    try {
+      backbtn = window.innerWidth <= 415 ? '' : <BackBtn />
+    } catch (err) {
+      backbtn = <BackBtn />
+    }
+
     return (
       <Layout>
         <div className="Contact-cont">
@@ -77,7 +84,7 @@ export default class ConnectPage extends Component {
             </div>
           </div>
         </div>
-        {window.innerWidth <= 415 ? '' : <BackBtn />}
+        {backbtn}
       </Layout>
     )
   }

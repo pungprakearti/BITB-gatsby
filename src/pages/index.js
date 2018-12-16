@@ -126,44 +126,48 @@ export default class IndexPage extends Component {
     let kittens
 
     //for mobile
-    if (window.innerWidth <= 415) {
+    try {
+      if (window.innerWidth <= 415) {
+        kittens = ''
+      } else {
+        kittens = this.state.kittens ? (
+          <React.Fragment>
+            <div className="Index-kitten1">
+              <img
+                src={this.props.data.imgKitten1.childImageSharp.fluid.src}
+                alt="yellow kitten raising the roof"
+                id="index-kitten1"
+              />
+            </div>
+            <div className="Index-kitten2">
+              <img
+                src={this.props.data.imgKitten2.childImageSharp.fluid.src}
+                alt="black cat chillin"
+                id="index-kitten2"
+              />
+            </div>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <div className="Index-kitten1 Index-kitten-right">
+              <img
+                src={this.props.data.imgKitten1.childImageSharp.fluid.src}
+                alt="yellow kitten raising the roof"
+                id="index-kitten1"
+              />
+            </div>
+            <div className="Index-kitten2 Index-kitten-left">
+              <img
+                src={this.props.data.imgKitten2.childImageSharp.fluid.src}
+                alt="black cat chillin"
+                id="index-kitten2"
+              />
+            </div>
+          </React.Fragment>
+        )
+      }
+    } catch (err) {
       kittens = ''
-    } else {
-      kittens = this.state.kittens ? (
-        <React.Fragment>
-          <div className="Index-kitten1">
-            <img
-              src={this.props.data.imgKitten1.childImageSharp.fluid.src}
-              alt="yellow kitten raising the roof"
-              id="index-kitten1"
-            />
-          </div>
-          <div className="Index-kitten2">
-            <img
-              src={this.props.data.imgKitten2.childImageSharp.fluid.src}
-              alt="black cat chillin"
-              id="index-kitten2"
-            />
-          </div>
-        </React.Fragment>
-      ) : (
-        <React.Fragment>
-          <div className="Index-kitten1 Index-kitten-right">
-            <img
-              src={this.props.data.imgKitten1.childImageSharp.fluid.src}
-              alt="yellow kitten raising the roof"
-              id="index-kitten1"
-            />
-          </div>
-          <div className="Index-kitten2 Index-kitten-left">
-            <img
-              src={this.props.data.imgKitten2.childImageSharp.fluid.src}
-              alt="black cat chillin"
-              id="index-kitten2"
-            />
-          </div>
-        </React.Fragment>
-      )
     }
 
     return (

@@ -8,18 +8,15 @@ export default class SectionIcon extends Component {
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
   }
   handleMouseEnter() {
-    console.log('mouse enter')
-    this.props.handleKittens()
+    if (this.props.id === 'contact') {
+      this.props.handleKittens()
+    }
   }
   render() {
     return (
       <Link to={`/${this.props.id.toLowerCase()}`}>
         <div
-          className={
-            this.props.fadeOut
-              ? 'SectionIcon-cont fadeOut'
-              : 'SectionIcon-cont fadeIn'
-          }
+          className="SectionIcon-cont"
           onMouseEnter={this.handleMouseEnter}
           onMouseLeave={this.handleMouseEnter}
         >

@@ -12,29 +12,12 @@ export const query = graphql`
 `
 
 export default class LipslutPage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      show: true,
-    }
-
-    this.colors = {
-      red: '#F95F62',
-      orange: '#FF9052',
-      yellow: '#FFD185',
-      green: '#13CE66',
-      blue: '#00A6FF',
-      purple: '#976DD0',
-      white: '#F0E3E9',
-    }
-  }
-
   render() {
     return (
       <Layout>
-        <div className="content-cont" style={{ color: this.colors.white }}>
+        <div className="content-cont">
           <div className="content-center">
+            <br />
             <img
               src={this.props.data.imgLSDV.publicURL}
               alt="An animated gif of the US with states colored based off of sales"
@@ -52,13 +35,7 @@ export default class LipslutPage extends Component {
             <br />
           </p>
           <div className="content-center">
-            <a
-              href="https://www.lipslut.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Check out www.Lipslut.com
-            </a>
+            <a href="https://www.lipslut.com/">Check out www.Lipslut.com</a>
           </div>
         </div>
         <BackBtn />

@@ -1,0 +1,27 @@
+.MobileResume-cont {
+  color: #f0e3e9;
+}
+
+.MobileResume-cont * h4 {
+  color: #ff9052;
+  line-height: 20px;
+  text-align: center;
+}
+
+.MobileResume-cont * h3 {
+  border: 0;
+  color: #00a6ff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.MobileResume-skills-cols {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: -50px;
+}
+
+.MobileResume-css {
+  text-indent: -5px;
+}

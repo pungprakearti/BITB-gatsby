@@ -24,29 +24,12 @@ export const query = graphql`
 `
 
 export default class AboutMePage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      show: true,
-    }
-
-    this.colors = {
-      red: '#F95F62',
-      orange: '#FF9052',
-      yellow: '#FFD185',
-      green: '#13CE66',
-      blue: '#00A6FF',
-      purple: '#976DD0',
-      white: '#F0E3E9',
-    }
-  }
-
   render() {
     return (
       <Layout>
-        <div className="content-cont" style={{ color: this.colors.white }}>
+        <div className="content-cont">
           <div className="content-center">
+            <br />
             <img
               src={this.props.data.imgAboutMe.childImageSharp.fluid.src}
               alt="Such a handsome fellow. Also, very very humble."
@@ -102,6 +85,8 @@ export default class AboutMePage extends Component {
             <a href="https://imgur.com/gallery/ZMZOU">
               DITL of an indie game developer
             </a>
+            <br />
+            <br />
           </div>
           <div className="content-center">
             <img

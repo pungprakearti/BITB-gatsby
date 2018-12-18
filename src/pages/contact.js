@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
@@ -13,42 +12,12 @@ import {
 
 import './contact.css'
 
-export const query = graphql`
-  {
-    imgLipslut: file(relativePath: { eq: "img_lipslut.jpg" }) {
-      childImageSharp {
-        fluid {
-          src
-        }
-      }
-    }
-  }
-`
-
 export default class ConnectPage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      show: true,
-    }
-
-    this.colors = {
-      red: '#F95F62',
-      orange: '#FF9052',
-      yellow: '#FFD185',
-      green: '#13CE66',
-      blue: '#00A6FF',
-      purple: '#976DD0',
-      white: '#F0E3E9',
-    }
-  }
-
   render() {
     return (
       <Layout>
         <div className="Contact-cont">
-          <div className="content-cont" style={{ color: this.colors.white }}>
+          <div className="content-cont">
             <div className="content-center">
               <h2>Contact Me</h2>
               <a href="mailto:andrew.pungprakearti@gmail.com">

@@ -12,28 +12,10 @@ export const query = graphql`
 `
 
 export default class JoblyPage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      show: true,
-    }
-
-    this.colors = {
-      red: '#F95F62',
-      orange: '#FF9052',
-      yellow: '#FFD185',
-      green: '#13CE66',
-      blue: '#00A6FF',
-      purple: '#976DD0',
-      white: '#F0E3E9',
-    }
-  }
-
   render() {
     return (
       <Layout>
-        <div className="content-cont" style={{ color: this.colors.white }}>
+        <div className="content-cont">
           <div className="content-center">
             <p>
               <h1>Jobly, the end-all for job search and application</h1>
@@ -54,13 +36,7 @@ export default class JoblyPage extends Component {
             <br />
           </p>
           <div className="content-center">
-            <a
-              href="http://react-jobly.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Check out Jobly!
-            </a>
+            <a href="http://react-jobly.herokuapp.com/">Check out Jobly!</a>
           </div>
         </div>
         <BackBtn />

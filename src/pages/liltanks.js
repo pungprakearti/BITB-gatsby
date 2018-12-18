@@ -17,32 +17,12 @@ export const query = graphql`
 `
 
 export default class LilTanksPage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      show: true,
-    }
-
-    this.colors = {
-      red: '#F95F62',
-      orange: '#FF9052',
-      yellow: '#FFD185',
-      green: '#13CE66',
-      blue: '#00A6FF',
-      purple: '#976DD0',
-      white: '#F0E3E9',
-    }
-  }
-
   render() {
     return (
       <Layout>
-        <div className="content-cont" style={{ color: this.colors.white }}>
+        <div className="content-cont">
           <div className="content-center">
-            <p>
-              <h2>I made a video game!</h2>
-            </p>
+            <h2>I made a video game!</h2>
             <div className="content-center">
               <img
                 src={this.props.data.imgLilTanksGP1.publicURL}
@@ -59,13 +39,11 @@ export default class LilTanksPage extends Component {
             <br />
           </p>
           <div className="content-center">
-            <a
-              href="https://store.steampowered.com/app/495820/Lil_Tanks/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://store.steampowered.com/app/495820/Lil_Tanks/">
               Check it out on SteamPowered.com
             </a>
+            <br />
+            <br />
           </div>
           <div className="content-center">
             <img
@@ -74,11 +52,8 @@ export default class LilTanksPage extends Component {
             />
           </div>
           <div className="content-center">
-            <a
-              href="http://www.leadmoneygames.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <br />
+            <a href="http://www.leadmoneygames.com">
               Learn more about Lead Money Games here
             </a>
             <br />

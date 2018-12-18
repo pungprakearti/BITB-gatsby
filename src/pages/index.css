@@ -231,7 +231,15 @@
     display: block;
     width: 320px;
     height: calc(100vh - 45px);
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+  }
+
+  .Index-kitten-cont,
+  .Index-kitten1,
+  .Index-kitten2 {
+    display: none;
   }
 
   .Index-grid {

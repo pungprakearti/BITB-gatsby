@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html {
-  /* -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; */
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   height: 100%;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  overflow: hidden;
 }
 
 a {
@@ -40,9 +42,9 @@ h2 {
 
 .content-cont {
   width: 500px;
+  height: 100%;
+  color: #f0e3e9;
   margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 5em;
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 1s;
@@ -59,6 +61,12 @@ h2 {
   }
 }
 
+p {
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .content-cont > p {
   text-indent: 50px;
 }
@@ -71,7 +79,6 @@ img {
 
 .content-center {
   text-align: center;
-  margin-bottom: 1em;
 }
 
 .Layout-cont {
@@ -88,7 +95,7 @@ img {
 .Layout-bg-cont {
   display: flex;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 45px);
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -159,40 +166,35 @@ img {
     display: flex;
     justify-content: center;
     height: calc(100% - 55px);
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .Layout-child-cont {
+    padding-left: 5px;
+    padding-right: 5px;
     width: 320px;
     height: calc(100% - 1px);
+    width: 100%;
+    overflow: hidden;
   }
 
   .Layout-bg-cont {
-    height: calc(100% - 55px);
+    display: none;
   }
 
   .content-cont {
     width: 100%;
+    overflow-x: hidden;
   }
 
   #___gatsby {
     height: 100%;
+    width: 100%;
   }
 
   #___gatsby > div {
     height: 100%;
-  }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
-  }
-
-  iframe {
-    position: relative;
-  }
-
-  article {
-    position: relative;
+    width: 100%;
   }
 }

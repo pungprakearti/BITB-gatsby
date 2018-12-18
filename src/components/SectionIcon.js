@@ -8,8 +8,9 @@ export default class SectionIcon extends Component {
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
   }
   handleMouseEnter() {
-    console.log('mouse enter')
-    this.props.handleKittens()
+    if (this.props.id === 'contact') {
+      this.props.handleKittens()
+    }
   }
   render() {
     return (

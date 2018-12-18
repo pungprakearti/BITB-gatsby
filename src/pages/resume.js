@@ -3,7 +3,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
 import PrintResume from '../components/PrintResume'
-import NavBar from '../components/NavBar'
+import MobileResume from '../components/MobileResume'
+import './resume.css'
 
 export const query = graphql`
   {
@@ -16,41 +17,42 @@ export const query = graphql`
 `
 
 export default class ResumePage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      show: true,
-    }
-
-    this.colors = {
-      red: '#F95F62',
-      orange: '#FF9052',
-      yellow: '#FFD185',
-      green: '#13CE66',
-      blue: '#00A6FF',
-      purple: '#976DD0',
-      white: '#F0E3E9',
-    }
-  }
-
   render() {
     return (
-      <React.Fragment>
-        <NavBar />
-        <br />
-        <PrintResume />
-        <BackBtn />
-        <div className="content-center">
-          <br />
-          <a
-            href={this.props.data.pdfResume.publicURL}
-            download="andrew_pungprakearti_resume_2018.pdf"
-          >
-            Download Printable PDF Resume
-          </a>
-        </div>
-      </React.Fragment>
+      <Layout>
+        <React.Fragment>
+          <div className="Resume-desktop">
+            <br />
+            <PrintResume />
+            <BackBtn />
+            <div className="content-center">
+              <br />
+              <a
+                href={this.props.data.pdfResume.publicURL}
+                download="andrew_pungprakearti_resume_2018.pdf"
+              >
+                Download Printable PDF Resume
+              </a>
+              <br />
+              <br />
+            </div>
+          </div>
+          <div className="Resume-mobile">
+            <MobileResume />
+            <div className="content-center">
+              <a
+                href={this.props.data.pdfResume.publicURL}
+                download="andrew_pungprakearti_resume_2018.pdf"
+              >
+                Download Printable PDF Resume
+              </a>
+              <br />
+              <br />
+              <br />
+            </div>
+          </div>
+        </React.Fragment>
+      </Layout>
     )
   }
 }

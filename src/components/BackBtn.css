@@ -155,11 +155,16 @@
 
 @media only screen and (max-width: 415px) {
   .BackBtn-grid {
+    display: none;
+  }
+
+  /* .BackBtn-grid {
     position: relative;
     left: 115px;
     grid-template-columns: 16px 16px 16px 16px 16px 16px;
     grid-template-rows: 16px 16px 16px;
-    /* visibility: hidden; */
+    visibility: hidden;
+    height: 0;
   }
 
   .BackBtn1 {
@@ -200,5 +205,5 @@
   .BackBtn-grid {
     bottom: 35px;
     right: 5px;
-  }
+  } */
 }

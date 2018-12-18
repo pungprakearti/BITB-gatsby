@@ -3,6 +3,8 @@
   justify-content: center;
   width: 100%;
   height: calc(100vh - 50px);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .Contact-icons-cont {
@@ -50,5 +52,16 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .Contact-cont {
+    display: block;
+    width: 320px;
+    height: calc(100vh - 45px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
   }
 }

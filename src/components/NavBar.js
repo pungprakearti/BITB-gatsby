@@ -7,29 +7,6 @@ export default class NavBar extends Component {
   render() {
     let navbar
 
-    //for mobile
-    /*
-    if (this.state.windowWidth <= 415) {
-      navbar = (
-        <div className="NavBar-cont NavBar-mobile">
-          <Link to="/">
-            <FaHome className="NavBar-icon-home" />
-          </Link>
-          <Link to="/resume">
-            <FaFileAlt className="NavBar-icon-resume" />
-          </Link>
-          <a href="https://github.com/pungprakearti">
-            <FaGithubSquare className="NavBar-icon-github" />
-          </a>
-          <Link to="/contact">
-            <FaEnvelope className="NavBar-icon-contact" />
-          </Link>
-        </div>
-      )
-    } else {
-      */
-    //
-    //desktop
     navbar = (
       <React.Fragment>
         <div className="NavBar-cont NavBar-desktop">
@@ -75,7 +52,6 @@ export default class NavBar extends Component {
         </div>
       </React.Fragment>
     )
-    // }
 
     return navbar
   }

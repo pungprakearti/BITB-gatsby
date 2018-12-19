@@ -1,3 +1,10 @@
+# BITB-gatsby
+
+<p align="center">
+<img src="bitb_preview.gif" alt="animated gif of www.biscuitsinthebasket.com" />
+</p>
+
+
 This is a repo for my personal site: www.biscuitsinthebasket.com
 
 The site was built with Gatsby on React and is hosted on Netlify.

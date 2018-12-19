@@ -27,6 +27,7 @@ export default class AlgorithmsPage extends Component {
           {/* <br /> */}
           {/* <div className="content-center"><h2>Leveret</h2></div> */}
           {/* <Leveret /> */}
+          <br />
         </div>
         <BackBtn />
       </Layout>

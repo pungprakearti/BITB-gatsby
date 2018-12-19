@@ -94,6 +94,7 @@ export default class AboutMePage extends Component {
               alt="Mi familia"
             />
           </div>
+          <br />
         </div>
         <BackBtn />
       </Layout>

@@ -45,6 +45,7 @@ export default class ConnectPage extends Component {
               </div>
             </div>
           </div>
+          <br />
         </div>
         <BackBtn />
       </Layout>

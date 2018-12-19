@@ -65,6 +65,7 @@ export default class LilTanksPage extends Component {
               <FaApple className="icon-apple" />
             </div>
           </div>
+          <br />
         </div>
         <BackBtn />
       </Layout>

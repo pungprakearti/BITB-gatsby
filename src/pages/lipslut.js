@@ -39,6 +39,7 @@ export default class LipslutPage extends Component {
           <div className="content-center">
             <a href="https://www.lipslut.com/">Check out www.Lipslut.com</a>
           </div>
+          <br />
         </div>
         <BackBtn />
       </Layout>

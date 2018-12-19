@@ -104,7 +104,7 @@ export default class IndexPage extends Component {
       },
       {
         id: 'contact',
-        colors: this.colors.white,
+        color: this.colors.white,
         image: this.props.data.imgContact.publicURL,
       },
     ]

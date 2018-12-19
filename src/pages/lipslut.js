@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
+import './lipslut.css'
 
 export const query = graphql`
   {
@@ -21,6 +22,7 @@ export default class LipslutPage extends Component {
             <img
               src={this.props.data.imgLSDV.publicURL}
               alt="An animated gif of the US with states colored based off of sales"
+              id="Lipslut-dv"
             />
           </div>
           <p>

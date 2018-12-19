@@ -13,6 +13,7 @@ export default class SectionIcon extends Component {
     }
   }
   render() {
+    console.log(this.props.color)
     return (
       <Link to={`/${this.props.id.toLowerCase()}`}>
         <div

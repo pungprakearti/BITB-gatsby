@@ -27,6 +27,7 @@ function lunchCount(garden) {
   // Get number of rows and columns
   const nrows = garden.length
   const ncols = garden[0].length
+  let path = []
 
   // Get the start position
   let pos = getHighMiddle(garden, nrows, ncols)
@@ -44,8 +45,8 @@ function lunchCount(garden) {
     // Find first highest value following WNES movement
     let nextPosIdx = carrotsAround.indexOf(Math.max(...carrotsAround))
 
+    path.push(pos.slice(0))
     pos = moveToNewPos(nextPosIdx, pos)
-    console.log(pos)
 
     // Eat carrots
     totalEaten += garden[pos[0]][pos[1]]
@@ -56,7 +57,8 @@ function lunchCount(garden) {
   }
 
   // All out of nearby carrots. NAP TIME!
-  return totalEaten
+
+  return { totalEaten, path }
 }
 // end
 
@@ -147,19 +149,56 @@ function moveToNewPos(nextPosIdx, pos) {
   return pos
 }
 
-//make 10 x 8 grid and each value is random between 1-9
-const rowMax = 10
-const colMax = 8
-let cell = [0, 0]
-
 /***********************************************/
 
 export default class Leveret extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      pos: [],
+    }
+    this.path = []
+    this.totalEaten = 0
+    this.matrix = []
+
+    //make 10 x 8 grid
+    this.rowMax = 10
+    this.colMax = 8
+  }
+
+  componentDidMount() {
+    this.intervalID = setInterval(this.movePos, 100)
+    console.log('started interval')
+    let matrix = this.createMatrix()
+    let { totalEaten, path } = lunchCount(matrix)
+    this.path = path
+    this.totalEaten = totalEaten
+    this.matrix = matrix
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalID)
+    console.log('killed interval')
+  }
+
+  movePos() {
+    //moves the position to the next cell
+    this.setState(st => {
+      return {
+        index: ++st.index % this.totalEaten,
+      }
+    })
+  }
+
   createTableElem(rowMax, colMax, matrix, cell) {
     let rows = []
     for (let r = 0; r < rowMax; r++) {
+      console.log('hey getting here')
       let cols = []
       for (let c = 0; c < colMax; c++) {
+        console.log('hey getting here too')
+
+        //CAN'T GET PASSED THIS AREA - ERRORS OUT HERE <----------------
         if (cell[0] === c && cell[1] === r) {
           cols.push(
             <td
@@ -173,6 +212,7 @@ export default class Leveret extends Component {
           cols.push(<td id={`AlgoLeveret-table-${c}-${r}`}>{matrix[r][c]}</td>)
         }
       }
+
       rows.push(<tr>{cols}</tr>)
     }
 
@@ -189,9 +229,9 @@ export default class Leveret extends Component {
     const max = 10
     let matrix = []
 
-    for (let c = 0; c < colMax; c++) {
+    for (let c = 0; c < this.colMax; c++) {
       let row = []
-      for (let r = 0; r < rowMax; r++) {
+      for (let r = 0; r < this.rowMax; r++) {
         row.push(Math.floor(Math.random() * Math.floor(max)))
       }
       matrix.push(row)
@@ -200,9 +240,12 @@ export default class Leveret extends Component {
   }
 
   render() {
-    let matrix = this.createMatrix()
-    let table = this.createTableElem(colMax, rowMax, matrix, cell)
-    console.log(lunchCount(matrix))
+    let table = this.createTableElem(
+      this.colMax,
+      this.rowMax,
+      this.matrix,
+      this.path[this.state.pos]
+    )
 
     return <div>{table}</div>
   }

@@ -83,12 +83,10 @@ export default class AlgoSpiral extends Component {
 
   componentDidMount() {
     this.intervalID = setInterval(this.movePos, 100)
-    console.log('started interval')
   }
 
   componentWillUnmount() {
     clearInterval(this.intervalID)
-    console.log('killed interval')
   }
 
   movePos() {

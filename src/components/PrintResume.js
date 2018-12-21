@@ -19,8 +19,7 @@ export default class PrintResume extends Component {
             <h3>Experience</h3>
             <div className="PrintResume-faneron">
               <h4>Front End Web Development Intern</h4>
-              Faneron Inc. -{' '}
-              <a href="http://www.lipslut.com">www.lipslut.com</a>
+              Faneron Inc.
               <br />
               November 2018 - present
               <br />
@@ -129,8 +128,7 @@ export default class PrintResume extends Component {
                   <br />
                   Git
                   <br />
-                  CSS
-                  <br />
+                  <div id="PrintResume-css">CSS</div>
                   SASS
                 </p>
               </div>

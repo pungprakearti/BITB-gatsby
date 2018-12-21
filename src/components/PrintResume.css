@@ -196,3 +196,8 @@ li {
 .PrintResume-github {
   margin-top: -30px;
 }
+
+#PrintResume-css {
+  text-indent: -3px;
+  transform: rotate(7deg);
+}

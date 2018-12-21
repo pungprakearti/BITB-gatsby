@@ -11,6 +11,7 @@ export default class SpiralTable extends Component {
             <td
               id={`AlgoSpiral-table${num}-${c}-${r}`}
               style={{ borderColor: color, backgroundColor: 'red' }}
+              key={`${c}-${r}`}
             />
           )
         } else {
@@ -18,11 +19,12 @@ export default class SpiralTable extends Component {
             <td
               id={`AlgoSpiral-table${num}-${c}-${r}`}
               style={{ borderColor: color }}
+              key={`${c}-${r}`}
             />
           )
         }
       }
-      rows.push(<tr>{cols}</tr>)
+      rows.push(<tr key={r}>{cols}</tr>)
     }
 
     return (

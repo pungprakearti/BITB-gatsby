@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './AlgoLeveret.css'
 
 /** Leveret lunch count. ***********************/
 
@@ -44,6 +45,7 @@ function lunchCount(garden) {
     let nextPosIdx = carrotsAround.indexOf(Math.max(...carrotsAround))
 
     pos = moveToNewPos(nextPosIdx, pos)
+    console.log(pos)
 
     // Eat carrots
     totalEaten += garden[pos[0]][pos[1]]
@@ -148,34 +150,27 @@ function moveToNewPos(nextPosIdx, pos) {
 //make 10 x 8 grid and each value is random between 1-9
 const rowMax = 10
 const colMax = 8
-// for(let r = 0; r < rowMax; r++){
-//   for(let c = 0; c < colMax; c++){
-
-//   }
-// }
+let cell = [0, 0]
 
 /***********************************************/
 
 export default class Leveret extends Component {
-  createTableElem(rowMax, colMax, cell) {
+  createTableElem(rowMax, colMax, matrix, cell) {
     let rows = []
     for (let r = 0; r < rowMax; r++) {
       let cols = []
       for (let c = 0; c < colMax; c++) {
-        if (this.props.cell[0] === c && this.props.cell[1] === r) {
+        if (cell[0] === c && cell[1] === r) {
           cols.push(
             <td
               id={`AlgoLeveret-table-${c}-${r}`}
-              style={{ borderColor: 'brown', backgroundColor: 'red' }}
-            />
+              style={{ backgroundColor: 'orangered' }}
+            >
+              {matrix[r][c]}
+            </td>
           )
         } else {
-          cols.push(
-            <td
-              id={`AlgoLeveret-table-${c}-${r}`}
-              style={{ borderColor: 'brown' }}
-            />
-          )
+          cols.push(<td id={`AlgoLeveret-table-${c}-${r}`}>{matrix[r][c]}</td>)
         }
       }
       rows.push(<tr>{cols}</tr>)
@@ -183,13 +178,32 @@ export default class Leveret extends Component {
 
     return (
       <div className={`AlgoLeveret-table-cont`}>
-        <table className={`AlgoLeveret-table`} style={{ borderColor: 'brown' }}>
+        <table className="AlgoLeveret-table">
           <tbody>{rows}</tbody>
         </table>
       </div>
     )
   }
+
+  createMatrix() {
+    const max = 10
+    let matrix = []
+
+    for (let c = 0; c < colMax; c++) {
+      let row = []
+      for (let r = 0; r < rowMax; r++) {
+        row.push(Math.floor(Math.random() * Math.floor(max)))
+      }
+      matrix.push(row)
+    }
+    return matrix
+  }
+
   render() {
-    return <div>Leveret stuff goes here</div>
+    let matrix = this.createMatrix()
+    let table = this.createTableElem(colMax, rowMax, matrix, cell)
+    console.log(lunchCount(matrix))
+
+    return <div>{table}</div>
   }
 }

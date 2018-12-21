@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
 import AlgoSpiral from '../components/AlgoSpiral'
-// import LeveretPage from '../components/AlgoLeveret'
-// import Leveret from '../components/AlgoLeveret'
+import Leveret from '../components/AlgoLeveret'
 
 export default class AlgorithmsPage extends Component {
   render() {
@@ -24,9 +23,11 @@ export default class AlgorithmsPage extends Component {
             entire grid stopping in the middle.
           </p>
           <AlgoSpiral />
-          {/* <br /> */}
-          {/* <div className="content-center"><h2>Leveret</h2></div> */}
-          {/* <Leveret /> */}
+          <br />
+          <div className="content-center">
+            <h2>Leveret</h2>
+          </div>
+          <Leveret />
           <br />
         </div>
         <BackBtn />

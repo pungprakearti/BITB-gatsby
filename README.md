@@ -15,3 +15,8 @@ Todo list:
 3. Add more data visualization stuff to the algorithms page
 4. ~~Make lipslut data visualization larger~~
 5. ~~Fix spacing on bottom of each page~~
+6. make a max width for the nav bar
+7. change typography
+8. make new layouts for large screens
+9. change colors of icons on mobile nav bar
+10. change colors on icons in general

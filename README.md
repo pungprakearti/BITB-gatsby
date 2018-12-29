@@ -20,3 +20,4 @@ Todo list:
 8. make new layouts for large screens
 9. change colors of icons on mobile nav bar
 10. change colors on icons in general
+11. more padding for mobile

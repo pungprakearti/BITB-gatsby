@@ -46,6 +46,10 @@
   animation-fill-mode: forwards;
 }
 
+.Contact-email-mobile {
+  display: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -63,5 +67,14 @@
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0 auto;
+  }
+
+  .Contact-email-desktop {
+    display: none;
+  }
+
+  .Contact-email-mobile {
+    display: block;
+    line-height: 20px;
   }
 }

@@ -20,9 +20,20 @@ export default class ConnectPage extends Component {
           <div className="content-cont">
             <div className="content-center">
               <h2>Contact Me</h2>
-              <a href="mailto:andrew.pungprakearti@gmail.com">
-                andrew.pungprakearti@gmail.com
-              </a>
+              <div className="Contact-email-desktop">
+                <a href="mailto:andrew.pungprakearti@gmail.com">
+                  andrew.pungprakearti@gmail.com
+                </a>
+              </div>
+              <div className="Contact-email-mobile">
+                <a href="mailto:andrew.pungprakearti@gmail.com">
+                  andrew.
+                  <br />
+                  pungprakearti
+                  <br />
+                  @gmail.com
+                </a>
+              </div>
               <br />
               <br />
               <h2>Connect With Me</h2>

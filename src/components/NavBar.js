@@ -42,18 +42,28 @@ export default class NavBar extends Component {
           </div>
         </div>
         <div className="NavBar-cont NavBar-mobile">
-          <Link to="/">
-            <FaHome className="NavBar-icon-home" />
-          </Link>
-          <Link to="/resume">
-            <FaFileAlt className="NavBar-icon-resume" />
-          </Link>
-          <a href="https://github.com/pungprakearti">
-            <FaGithubSquare className="NavBar-icon-github" />
-          </a>
-          <Link to="/contact">
-            <FaEnvelope className="NavBar-icon-contact" />
-          </Link>
+          <div className="NavBar-mobile-inner-cont">
+            <div>
+              <Link to="/">
+                <FaHome className="NavBar-icon-home" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/resume">
+                <FaFileAlt className="NavBar-icon-resume" />
+              </Link>
+            </div>
+            <div>
+              <a href="https://github.com/pungprakearti">
+                <FaGithubSquare className="NavBar-icon-github" />
+              </a>
+            </div>
+            <div>
+              <Link to="/contact">
+                <FaEnvelope className="NavBar-icon-contact" />
+              </Link>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     )

@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: 1000px;
-  /* background-color: rgba(35, 54, 86, 0.1);*/
 }
 
 .NavBar-mobile {
@@ -12,9 +12,6 @@
 }
 
 .NavBar-desktop {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
   background-color: rgba(35, 54, 86, 0.1);
 }
 .NavBar-left {
@@ -52,7 +49,26 @@
   margin: 0.5em;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 850px) {
+  .NavBar-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .NavBar-mobile-inner-cont {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 5px;
+    min-width: 320px;
+  }
+
   .NavBar-desktop {
     display: none;
   }
@@ -62,29 +78,25 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
-    /* visibility: visible; */
     height: 55px;
   }
 
   .NavBar-icon-home {
     font-size: 50px;
     margin-left: 10px;
-    color: #13ce66;
+    color: #f0e3e9;
   }
 
   .NavBar-icon-resume {
     font-size: 40px;
-    color: #00a6ff;
   }
 
   .NavBar-icon-github {
     font-size: 45px;
-    color: #976dd0;
   }
 
   .NavBar-icon-contact {
     font-size: 50px;
     margin-right: 10px;
-    color: #ff9052;
   }
 }

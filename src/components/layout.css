@@ -92,7 +92,7 @@ p {
 }
 
 img {
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
@@ -204,8 +204,6 @@ img {
   }
 
   .Layout-child-cont {
-    padding-left: 5px;
-    padding-right: 5px;
     width: 320px;
     height: calc(100% - 1px);
     width: 100%;

@@ -141,6 +141,10 @@
   transform: translate(-400px, 300px);
 }
 
+.Index-mobile-header {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .Index-kitten1 {
     bottom: -75px;
@@ -223,6 +227,24 @@
 
   .Index-kitten-left {
     transform: translate(-375px, 250px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Index-mobile-header {
+    display: block;
+    height: 80px;
+  }
+
+  .Index-mobile-header > .content-center > h2 {
+    color: #f0e3e9;
+    margin: 0 0;
+    margin-top: 20px;
+  }
+
+  .Index-mobile-header > .content-center > .Index-title {
+    color: rgb(0, 166, 255);
+    font-size: 24px;
   }
 }
 

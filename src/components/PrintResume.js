@@ -177,7 +177,7 @@ export default class PrintResume extends Component {
               <br />
               <div className="PrintResume-github">
                 <a href="https://github.com/pungprakearti">
-                  https://github.com/pungprakearti
+                  www.github.com/pungprakearti
                 </a>
               </div>
             </div>

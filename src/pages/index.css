@@ -134,7 +134,7 @@
 }
 
 .Index-kitten2 > img {
-  transform: scale(1.25) translateX(80px) rotate(20deg);
+  transform: scale(1.25) translateX(-50px) rotate(20deg);
 }
 
 .Index-kitten-left {

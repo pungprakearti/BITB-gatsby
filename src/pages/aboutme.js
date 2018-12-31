@@ -107,7 +107,7 @@ export default class AboutMePage extends Component {
                 <br />
                 <div className="content-center">
                   <a href="https://imgur.com/gallery/ZMZOU">
-                    DITL of an indie game developer
+                    Day in the life of an indie game developer
                   </a>
                 </div>
               </div>

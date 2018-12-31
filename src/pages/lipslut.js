@@ -28,6 +28,7 @@ export default class LipslutPage extends Component {
               id="Lipslut-dv"
             />
           </div>
+          <br />
           <p>
             At Rithm School, students intern for three weeks with professional
             companies. I worked with Faneron Inc. on a lipstick brand. The
@@ -47,6 +48,9 @@ export default class LipslutPage extends Component {
               id="Lipslut-ing"
             />
           </div>
+          <br />
+          <br />
+          <br />
           <br />
         </div>
         <BackBtn />

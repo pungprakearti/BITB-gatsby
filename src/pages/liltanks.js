@@ -30,6 +30,7 @@ export default class LilTanksPage extends Component {
               />
             </div>
           </div>
+          <br />
           <p>
             Lil Tanks is a throw back to old shmups like Gradius but with an
             RPG/leveling system twist. It features pixel art graphics and an
@@ -39,6 +40,7 @@ export default class LilTanksPage extends Component {
             <br />
           </p>
           <div className="content-center">
+            <br />
             <a href="https://store.steampowered.com/app/495820/Lil_Tanks/">
               Check it out on SteamPowered.com
             </a>
@@ -65,6 +67,9 @@ export default class LilTanksPage extends Component {
               <FaApple className="icon-apple" />
             </div>
           </div>
+          <br />
+          <br />
+          <br />
           <br />
         </div>
         <BackBtn />

@@ -30,6 +30,10 @@
   opacity: 1;
 }
 
+#SectionIcon-img-aboutMe {
+  transform: translate(40px, 40px) scale(2) rotate(-45deg);
+}
+
 #SectionIcon-img-jobly {
   transform: scale(3) rotate(-45deg);
 }

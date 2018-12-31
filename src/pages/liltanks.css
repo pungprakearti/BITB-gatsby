@@ -22,12 +22,6 @@
   text-indent: 50px;
 }
 
-img {
-  border-radius: 15px;
-  box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.5);
-  width: 75%;
-}
-
 .LilTanks-center {
   text-align: center;
   margin-bottom: 1em;

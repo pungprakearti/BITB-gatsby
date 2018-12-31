@@ -2,14 +2,12 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
-
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaInstagram,
   FaTwitterSquare,
 } from 'react-icons/fa'
-
 import './contact.css'
 
 export default class ConnectPage extends Component {

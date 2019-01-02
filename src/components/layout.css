@@ -95,6 +95,9 @@ img {
   border-radius: 10px;
   box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
+  max-height: 500px;
+  height: auto;
+  width: auto;
 }
 
 .content-center {
@@ -185,6 +188,7 @@ img {
   .content-2col {
     flex-direction: column;
     box-sizing: border-box;
+    justify-content: space-between;
   }
 
   .content-cont {
@@ -194,7 +198,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 550px) {
   .Layout-cont {
     display: flex;
     justify-content: center;
@@ -227,5 +231,11 @@ img {
   #___gatsby > div {
     height: 100%;
     width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 500px;
+    height: auto;
   }
 }

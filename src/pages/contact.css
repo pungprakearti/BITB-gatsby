@@ -59,7 +59,7 @@
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 550px) {
   .Contact-cont {
     display: block;
     width: 320px;

@@ -7,17 +7,23 @@
   animation-duration: 1s;
   animation-delay: 0;
   animation-fill-mode: forwards;
-  /* border: 1px solid red; */
 }
 
 .AboutMe-img {
   width: calc(700px / 2);
-  /* border: 1px solid red; */
+}
+
+.AboutMe-img2 > img {
+  width: 100%;
+  height: auto;
+}
+
+.AboutMe-img2 {
+  width: calc(700px / 2);
 }
 
 .AboutMe-p > p {
   width: calc(700px / 2);
-  /* border: 1px solid red; */
   text-align: left;
   text-indent: 50px;
 }
@@ -25,7 +31,6 @@
 @media only screen and (max-width: 800px) {
   .AboutMe-img {
     width: 75%;
-    /* border: 1px solid red; */
   }
 
   .AboutMe-p > p {

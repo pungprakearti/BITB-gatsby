@@ -1,7 +1,7 @@
 .BackBtn-grid {
   position: fixed;
   bottom: 3px;
-  right: calc(100vw / 2 - 425px); /* 21px */
+  right: calc(100vw / 2 - 425px);
   display: grid;
   grid-template-columns: 16px 16px 16px 16px 16px 16px;
   grid-template-rows: 16px 16px 16px 16px 16px;

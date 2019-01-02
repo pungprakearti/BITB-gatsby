@@ -32,7 +32,6 @@ export default class AboutMePage extends Component {
           <div className="content-center">
             <h1>I’m a full stack developer</h1>
             <div className="content-2col">
-              {/* <br /> */}
               <div className="AboutMe-img">
                 <img
                   src={this.props.data.imgAboutMe.childImageSharp.fluid.src}
@@ -98,7 +97,7 @@ export default class AboutMePage extends Component {
                 </p>
               </div>
 
-              <div className="AboutMe-img">
+              <div className="AboutMe-img2">
                 <img
                   src={this.props.data.imgFamily.childImageSharp.fluid.src}
                   alt="Mi familia"

@@ -2,14 +2,12 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
-
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaInstagram,
   FaTwitterSquare,
 } from 'react-icons/fa'
-
 import './contact.css'
 
 export default class ConnectPage extends Component {
@@ -20,9 +18,20 @@ export default class ConnectPage extends Component {
           <div className="content-cont">
             <div className="content-center">
               <h2>Contact Me</h2>
-              <a href="mailto:andrew.pungprakearti@gmail.com">
-                andrew.pungprakearti@gmail.com
-              </a>
+              <div className="Contact-email-desktop">
+                <a href="mailto:andrew.pungprakearti@gmail.com">
+                  andrew.pungprakearti@gmail.com
+                </a>
+              </div>
+              <div className="Contact-email-mobile">
+                <a href="mailto:andrew.pungprakearti@gmail.com">
+                  andrew.
+                  <br />
+                  pungprakearti
+                  <br />
+                  @gmail.com
+                </a>
+              </div>
               <br />
               <br />
               <h2>Connect With Me</h2>
@@ -45,7 +54,6 @@ export default class ConnectPage extends Component {
               </div>
             </div>
           </div>
-          <br />
         </div>
         <BackBtn />
       </Layout>

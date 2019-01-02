@@ -9,26 +9,31 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.AboutMe-img {
+  width: calc(700px / 2);
 }
 
-.AboutMe-cont > p {
+.AboutMe-img2 > img {
+  width: 100%;
+  height: auto;
+}
+
+.AboutMe-img2 {
+  width: calc(700px / 2);
+}
+
+.AboutMe-p > p {
+  width: calc(700px / 2);
+  text-align: left;
   text-indent: 50px;
 }
 
-img {
-  border-radius: 15px;
-  box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.5);
-  width: 75%;
-}
+@media only screen and (max-width: 800px) {
+  .AboutMe-img {
+    width: 75%;
+  }
 
-.AboutMe-center {
-  text-align: center;
-  margin-bottom: 1em;
+  .AboutMe-p > p {
+    width: 100%;
+  }
 }

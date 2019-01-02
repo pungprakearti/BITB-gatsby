@@ -27,6 +27,7 @@ export default class JoblyPage extends Component {
               />
             </div>
           </div>
+          <br />
           <p>
             Jobly was a Rithm School two part sprint. Four days creating a
             backend using Express and three days to create a React front end.
@@ -38,6 +39,10 @@ export default class JoblyPage extends Component {
           <div className="content-center">
             <a href="http://react-jobly.herokuapp.com/">Check out Jobly!</a>
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
         <BackBtn />
       </Layout>

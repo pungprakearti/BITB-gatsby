@@ -19,6 +19,7 @@
 
 .SectionIcon-outer-cont > img {
   position: absolute;
+  width: 100%;
   transform: scale(2) rotate(-45deg);
   opacity: 0.5;
   z-index: 2;
@@ -28,6 +29,10 @@
 
 .SectionIcon-outer-cont > img:hover {
   opacity: 1;
+}
+
+#SectionIcon-img-aboutMe {
+  transform: translate(40px, 40px) scale(2) rotate(-45deg);
 }
 
 #SectionIcon-img-jobly {
@@ -46,7 +51,7 @@
   transform: scale(2.5) rotate(-45deg);
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 550px) {
   .SectionIcon-cont {
     transform: rotate(-45deg) scale(0.95);
   }

@@ -162,6 +162,12 @@ export default class IndexPage extends Component {
     return (
       <Layout>
         <div className="Index-cont">
+          <div className="Index-mobile-header">
+            <div className="content-center">
+              <h2>Andrew Pungprakearti</h2>
+              <div className="Index-title">full stack developer</div>
+            </div>
+          </div>
           <div className="Index-grid">
             {this.sections.map(section => {
               if (section.id === 'contact') {

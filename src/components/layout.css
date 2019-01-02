@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans');
 
 html {
   min-height: 100vh;
@@ -15,15 +15,20 @@ body {
   background-image: linear-gradient(45deg, rgb(35, 54, 86), rgb(81, 103, 141));
   min-height: 100vh;
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  line-height: 26px;
   overflow: hidden;
 }
 
 a {
   text-decoration: none;
-  text-shadow: 0 0 20px white;
-  color: #f0e3e9;
+  color: skyblue;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.1s linear;
 }
 
 a:hover {
@@ -31,17 +36,22 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .content-cont {
-  width: 500px;
+  max-width: 800px;
   height: 100%;
   color: #f0e3e9;
   margin: 0 auto;
@@ -50,6 +60,15 @@ h2 {
   animation-duration: 1s;
   animation-delay: 0;
   animation-fill-mode: forwards;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-2col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -63,8 +82,9 @@ h2 {
 
 p {
   margin: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  box-sizing: border-box;
 }
 
 .content-cont > p {
@@ -72,9 +92,12 @@ p {
 }
 
 img {
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.5);
-  width: 75%;
+  width: 100%;
+  max-height: 500px;
+  height: auto;
+  width: auto;
 }
 
 .content-center {
@@ -161,7 +184,21 @@ img {
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 800px) {
+  .content-2col {
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  .content-cont {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
   .Layout-cont {
     display: flex;
     justify-content: center;
@@ -171,8 +208,6 @@ img {
   }
 
   .Layout-child-cont {
-    padding-left: 5px;
-    padding-right: 5px;
     width: 320px;
     height: calc(100% - 1px);
     width: 100%;
@@ -196,5 +231,11 @@ img {
   #___gatsby > div {
     height: 100%;
     width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 500px;
+    height: auto;
   }
 }

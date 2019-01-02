@@ -11,18 +11,6 @@
     height: calc(100vh - 45px);
     display: block;
     overflow: auto;
-    padding: 10px;
+    padding: 20px;
   }
 }
-
-/* @media only screen and (max-width: 415px) {
-  .Resume-desktop {
-    display: none;
-  }
-
-  .Resume-mobile {
-    height: calc(100vh - 45px);
-    display: block;
-    overflow: auto;
-  }
-} */

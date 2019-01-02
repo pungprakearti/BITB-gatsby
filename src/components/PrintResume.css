@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans');
 
 :root {
-  --resume-p: rgb(174, 179, 230);
-  --resume-s: rgb(101, 108, 187);
+  --resume-p: rgb(120, 141, 177);
+  --resume-s: rgb(35, 54, 86);
+  --resume-h: rgb(0, 0, 78);
 }
 
 .PrintResume-cont {
   margin: 0 auto;
   font-size: 16px;
-  width: 850px;
+  width: 820px;
   height: 1080px;
   background-color: white;
   color: black;
@@ -30,14 +31,14 @@
 
 .PrintResume-top {
   width: 100%;
-  height: 40px;
+  height: 20px;
 }
 
 .PrintResume-bottom {
   margin-top: 7px;
   width: 100%;
   height: 25px;
-  background-color: rgb(0, 0, 78);
+  background-color: var(--resume-h);
 }
 
 .PrintResume-header {
@@ -48,17 +49,17 @@
 .PrintResume-name {
   font-size: 50px;
   text-transform: uppercase;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 40px;
   color: var(--resume-s);
   letter-spacing: 0.025em;
 }
 
 .PrintResume-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  color: rgb(0, 0, 78);
-  text-transform: uppercase;
+  color: rgba(35, 54, 86, 0.85);
+  text-transform: lowercase;
   margin-bottom: -20px;
 }
 
@@ -66,6 +67,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  line-height: 21px;
 }
 
 .PrintResume-left,
@@ -76,7 +78,7 @@
 
 .PrintResume-left {
   width: 38%;
-  margin-right: 50px;
+  margin-right: 35px;
 }
 
 .PrintResume-middle {
@@ -89,15 +91,16 @@
 
 .PrintResume-right {
   width: 50%;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 h3 {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   border-top: 5px solid var(--resume-p);
   border-bottom: 5px solid var(--resume-p);
   color: var(--resume-s);
+  color: rgba(35, 54, 86, 0.8);
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
@@ -109,8 +112,8 @@ h3 {
 }
 
 .PrintResume-skills-cont {
-  margin-top: -25px;
-  margin-bottom: -25px;
+  margin-top: -10px;
+  margin-bottom: -10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -119,10 +122,10 @@ h3 {
 }
 
 h4 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
   line-height: 0px;
-  color: rgb(0, 0, 78);
+  color: var(--resume-h);
 }
 
 ul {
@@ -135,7 +138,7 @@ li::before {
   font-size: 30px;
   line-height: 0px;
   content: '• ';
-  color: var(--resume-s);
+  color: var(--resume-p);
 }
 
 li {
@@ -145,12 +148,12 @@ li {
 }
 
 .PrintResume-faneron {
-  margin-top: 27px;
+  margin-top: 25px;
 }
 
 .PrintResume-nimble,
 .PrintResume-pdi {
-  margin-top: 38px;
+  margin-top: 35px;
 }
 
 .PrintResume-projects-cont {
@@ -179,10 +182,12 @@ li {
 .PrintResume-bitb > a:hover,
 .PrintResume-github > a,
 .PrintResume-github > a:hover {
-  color: rgb(0, 0, 78);
+  color: var(--resume-h);
   font-weight: bold;
   text-transform: none;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 .PrintResume-contact {
@@ -199,5 +204,5 @@ li {
 
 #PrintResume-css {
   text-indent: -3px;
-  transform: rotate(7deg);
+  transform: translateY(3px) rotate(5deg);
 }

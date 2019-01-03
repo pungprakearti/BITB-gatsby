@@ -19,7 +19,8 @@
 }
 
 .AboutMe-img2 {
-  width: calc(700px / 2);
+  max-width: calc(700px / 2);
+  width: 100%;
 }
 
 .AboutMe-p > p {

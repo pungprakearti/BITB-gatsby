@@ -49,6 +49,20 @@ export const query = graphql`
         }
       }
     }
+    imgKittenL: file(relativePath: { eq: "img_kittenLL.png" }) {
+      childImageSharp {
+        fluid {
+          src
+        }
+      }
+    }
+    imgKittenR: file(relativePath: { eq: "img_kittenR.png" }) {
+      childImageSharp {
+        fluid {
+          src
+        }
+      }
+    }
   }
 `
 
@@ -127,14 +141,14 @@ export default class IndexPage extends Component {
       <div className="Index-kitten-cont">
         <div className="Index-kitten1">
           <img
-            src={this.props.data.imgKitten1.childImageSharp.fluid.src}
+            src={this.props.data.imgKittenR.childImageSharp.fluid.src}
             alt="yellow kitten raising the roof"
             id="index-kitten1"
           />
         </div>
         <div className="Index-kitten2">
           <img
-            src={this.props.data.imgKitten2.childImageSharp.fluid.src}
+            src={this.props.data.imgKittenL.childImageSharp.fluid.src}
             alt="black cat chillin"
             id="index-kitten2"
           />
@@ -144,14 +158,14 @@ export default class IndexPage extends Component {
       <div className="Index-kitten-cont">
         <div className="Index-kitten1 Index-kitten-right">
           <img
-            src={this.props.data.imgKitten1.childImageSharp.fluid.src}
+            src={this.props.data.imgKittenR.childImageSharp.fluid.src}
             alt="yellow kitten raising the roof"
             id="index-kitten1"
           />
         </div>
         <div className="Index-kitten2 Index-kitten-left">
           <img
-            src={this.props.data.imgKitten2.childImageSharp.fluid.src}
+            src={this.props.data.imgKittenL.childImageSharp.fluid.src}
             alt="black cat chillin"
             id="index-kitten2"
           />

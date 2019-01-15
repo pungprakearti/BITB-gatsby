@@ -107,18 +107,16 @@
   bottom: -55px;
   right: -105px;
   overflow: hidden;
-  transform: rotate(-45deg);
   transition: all 0.25s linear;
 }
 
 .Index-kitten1 > img {
   position: absolute;
-  width: 50em;
+  width: 35em;
   max-width: 2000px;
   max-height: 2000px;
-  bottom: -50px;
-  right: 0;
-  transform: translateX(350px) rotate(45deg);
+  bottom: 30px;
+  right: -80px;
 }
 
 .Index-kitten-right {
@@ -130,13 +128,12 @@
   width: 600px;
   bottom: -100px;
   left: -200px;
-  transform: rotate(-20deg);
   overflow: hidden;
   transition: all 0.25s linear;
 }
 
 .Index-kitten2 > img {
-  transform: scale(1.25) translateX(-50px) rotate(20deg);
+  transform: translate(225px, 75px) scale(1.65);
 }
 
 .Index-kitten-left {
@@ -151,7 +148,6 @@
   .Index-kitten1 {
     bottom: -75px;
     right: -125px;
-    transform: scale(0.9) rotate(-45deg);
   }
 
   .Index-kitten-right {
@@ -161,7 +157,6 @@
   .Index-kitten2 {
     bottom: -100px;
     left: -200px;
-    transform: scale(0.9) rotate(-20deg);
   }
 
   .Index-kitten-left {
@@ -173,7 +168,6 @@
   .Index-kitten1 {
     bottom: -150px;
     right: -155px;
-    transform: scale(0.8) rotate(-45deg);
   }
 
   .Index-kitten-right {
@@ -183,7 +177,6 @@
   .Index-kitten2 {
     bottom: -150px;
     left: -200px;
-    transform: scale(0.8) rotate(-20deg);
   }
 
   .Index-kitten-left {
@@ -236,7 +229,6 @@
   .Index-kitten1 {
     bottom: -150px;
     right: -175px;
-    transform: scale(0.75) rotate(-45deg);
   }
 
   .Index-kitten-right {
@@ -245,8 +237,7 @@
 
   .Index-kitten2 {
     bottom: -150px;
-    left: -265px;
-    transform: scale(0.75) rotate(-20deg);
+    left: -350px;
   }
 
   .Index-kitten-left {
@@ -258,7 +249,7 @@
   .Index-kitten1 {
     bottom: -155px;
     right: -165px;
-    transform: scale(0.5) rotate(-45deg);
+    transform: scale(0.5);
   }
 
   .Index-kitten-right {
@@ -268,7 +259,7 @@
   .Index-kitten2 {
     bottom: -150px;
     left: -250px;
-    transform: scale(0.5) rotate(-20deg);
+    transform: scale(0.5);
   }
 
   .Index-kitten-left {

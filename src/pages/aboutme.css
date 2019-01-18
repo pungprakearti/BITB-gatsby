@@ -25,8 +25,12 @@
 
 .AboutMe-p > p {
   width: calc(700px / 2);
-  text-align: left;
-  text-indent: 50px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.AboutMe-p > .content-center {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 800px) {

@@ -70,7 +70,7 @@ export default class AboutMePage extends Component {
           </p>
 
           <div className="content-center">
-            <h2>having worked on over forty films</h2>
+            {/* <h2>having worked on over forty films</h2> */}
             <div className="content-2col">
               <div className="AboutMe-p">
                 <p>

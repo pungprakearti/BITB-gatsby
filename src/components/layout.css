@@ -69,6 +69,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* margin-bottom: 10px; */
 }
 
 @keyframes fadeIn {
@@ -88,7 +89,8 @@ p {
 }
 
 .content-cont > p {
-  text-indent: 50px;
+  /* text-indent: 50px; */
+  /* margin-bottom: 15px; */
 }
 
 img {

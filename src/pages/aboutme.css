@@ -33,6 +33,10 @@
   padding-bottom: 10px;
 }
 
+#AboutMe-mid-p {
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 800px) {
   .AboutMe-img {
     width: 75%;

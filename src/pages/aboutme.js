@@ -62,7 +62,7 @@ export default class AboutMePage extends Component {
             </div>
           </div>
 
-          <p>
+          <p id="AboutMe-mid-p">
             After a few years of game development, I decided it’s time for me to
             throw myself into full fledged web development. I’ve always loved
             the intersection of computers and art and I’m excited to see where

@@ -11,7 +11,7 @@ export default class MobileResume extends Component {
             <h4>Front End Web Development Intern</h4>
             Faneron Inc. - <a href="http://www.lipslut.com">www.lipslut.com</a>
             <br />
-            November 2018 - present
+            November 2018 - December 2018
             <br />
             <ul>
               <li>Refactored an existing production JAMstack code base.</li>

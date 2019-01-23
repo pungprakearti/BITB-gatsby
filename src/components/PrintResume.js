@@ -21,7 +21,7 @@ export default class PrintResume extends Component {
               <h4>Front End Web Development Intern</h4>
               Faneron Inc.
               <br />
-              November 2018 - present
+              November 2018 - December 2018
               <br />
               <ul>
                 <li>Refactored an existing production JAMstack code base.</li>

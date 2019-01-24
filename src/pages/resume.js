@@ -37,7 +37,7 @@ export default class ResumePage extends Component {
               <br />
             </div>
           </div>
-          <div className="Resume-mobile">
+          {/* <div className="Resume-mobile">
             <MobileResume />
             <div className="content-center">
               <a
@@ -50,7 +50,7 @@ export default class ResumePage extends Component {
               <br />
               <br />
             </div>
-          </div>
+          </div> */}
         </React.Fragment>
       </Layout>
     )

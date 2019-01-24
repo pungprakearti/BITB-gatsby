@@ -206,3 +206,75 @@ li {
   text-indent: -3px;
   transform: translateY(3px) rotate(5deg);
 }
+
+@media only screen and (max-width: 900px) {
+  .PrintResume-cont {
+    color: #f0e3e9;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    overflow-y: hidden;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .PrintResume-cont * h4 {
+    color: rgb(50, 165, 214);
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .PrintResume-cont * h3 {
+    border: 0;
+    color: #00a6ff;
+  }
+
+  .PrintResume-skills-cols {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .PrintResume-css {
+    text-indent: -5px;
+    transform: translateY(4px) rotate(5deg);
+  }
+
+  .PrintResume-middle {
+    display: none;
+  }
+
+  .PrintResume-right {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .PrintResume-left {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .PrintResume-body-cont {
+    flex-direction: column;
+    /* overflow-y: auto; */
+  }
+
+  .Resume-desktop {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

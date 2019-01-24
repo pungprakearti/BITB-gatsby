@@ -82,7 +82,7 @@ export default class PrintResume extends Component {
           </div>
           <div className="PrintResume-middle" />
           <div className="PrintResume-left">
-            <h3>Projects</h3>
+            <h3 id="PrintResume-h-projects">Projects</h3>
             <div className="PrintResume-projects-cont">
               <a href="http://react-jobly.herokuapp.com/">
                 react-jobly.herokuapp.com
@@ -157,7 +157,7 @@ export default class PrintResume extends Component {
                 </li>
               </ul>
             </div>
-            <h3>Contact</h3>
+            <h3 id="PrintResume-h-contact">Contact</h3>
             <div className="PrintResume-contact">
               <a href="mailto:andrew.pungprakearti@gmail.com">
                 andrew.pungprakearti@gmail.com

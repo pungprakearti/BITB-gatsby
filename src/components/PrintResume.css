@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans');
 
 :root {
   --resume-p: rgb(120, 141, 177);
@@ -52,7 +52,6 @@
   font-family: 'Montserrat', sans-serif;
   line-height: 40px;
   color: var(--resume-s);
-  letter-spacing: 0.025em;
 }
 
 .PrintResume-title {
@@ -156,7 +155,7 @@ li {
   margin-top: 35px;
 }
 
-.PrintResume-projects-cont {
+.PrintResume-misc-cont {
   margin-top: -5px;
 }
 
@@ -170,12 +169,13 @@ li {
 
 .PrintResume-aau {
   margin-bottom: -15px;
+  margin-top: -10px;
 }
 
 .PrintResume-faneron > a,
 .PrintResume-faneron > a:hover,
-.PrintResume-projects-cont > a,
-.PrintResume-projects-cont > a:hover,
+.PrintResume-misc-cont > a,
+.PrintResume-misc-cont > a:hover,
 .PrintResume-contact > a,
 .PrintResume-contact > a:hover,
 .PrintResume-bitb > a,
@@ -199,7 +199,11 @@ li {
 }
 
 .PrintResume-github {
-  margin-top: -30px;
+  margin-top: -20px;
+}
+
+.PrintResume-USMC {
+  margin-top: 7px;
 }
 
 #PrintResume-css {
@@ -218,6 +222,7 @@ li {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 18px;
   }
 
   @keyframes fadeIn {
@@ -285,8 +290,6 @@ li {
   .PrintResume-top,
   .PrintResume-header,
   .PrintResume-middle,
-  .PrintResume-projects-cont,
-  #PrintResume-h-projects,
   #PrintResume-h-contact,
   .PrintResume-contact {
     display: none;

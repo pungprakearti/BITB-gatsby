@@ -82,15 +82,28 @@ export default class PrintResume extends Component {
           </div>
           <div className="PrintResume-middle" />
           <div className="PrintResume-left">
-            <h3 id="PrintResume-h-projects">Projects</h3>
-            <div className="PrintResume-projects-cont">
-              <a href="http://react-jobly.herokuapp.com/">
-                react-jobly.herokuapp.com
+            <h3 id="PrintResume-h-contact">Contact</h3>
+            <div className="PrintResume-contact">
+              <a href="mailto:andrew.pungprakearti@gmail.com">
+                andrew.pungprakearti@gmail.com
               </a>
-              <ul className="PrintResume-jobly">
-                <li>React front end</li>
-                <li>Express back end</li>
-              </ul>
+              <br />
+              (415) 868-5025
+              <br />
+              Rohnert Park, California
+              <br />
+              <br />
+              <div className="PrintResume-bitb">
+                <a href="http://www.biscuitsinthebasket.com">
+                  www.biscuitsinthebasket.com
+                </a>
+              </div>
+              <br />
+              <div className="PrintResume-github">
+                <a href="https://github.com/pungprakearti">
+                  www.github.com/pungprakearti
+                </a>
+              </div>
             </div>
             <h3>Skills</h3>
             <div className="PrintResume-skills-cont">
@@ -115,16 +128,16 @@ export default class PrintResume extends Component {
                   <br />
                   SQLAlchemy
                   <br />
-                  Express
+                  PostgreSQL
                   <br />
-                  Node.js
+                  GraphQL
                 </p>
               </div>
               <div className="PrintResume-skills-right">
                 <p>
-                  PostgreSQL
+                  Express
                   <br />
-                  GraphQL
+                  Node.js
                   <br />
                   Git
                   <br />
@@ -157,28 +170,16 @@ export default class PrintResume extends Component {
                 </li>
               </ul>
             </div>
-            <h3 id="PrintResume-h-contact">Contact</h3>
-            <div className="PrintResume-contact">
-              <a href="mailto:andrew.pungprakearti@gmail.com">
-                andrew.pungprakearti@gmail.com
-              </a>
+            <h3 id="PrintResume-h-misc">Miscellaneous</h3>
+            <div className="PrintResume-misc-cont">
+              Mentor with <a href="https://wearementorme.org/">Mentor Me</a>
               <br />
-              (415) 868-5025
+              2017 - Present
               <br />
-              Rohnert Park, California
-              <br />
-              <br />
-              <div className="PrintResume-bitb">
-                <a href="http://www.biscuitsinthebasket.com">
-                  www.biscuitsinthebasket.com
-                </a>
-              </div>
-              <br />
-              <br />
-              <div className="PrintResume-github">
-                <a href="https://github.com/pungprakearti">
-                  www.github.com/pungprakearti
-                </a>
+              <div className="PrintResume-USMC">
+                United States Marine Corps Veteran
+                <br />
+                2000 - 2008
               </div>
             </div>
           </div>

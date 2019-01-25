@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BackBtn from '../components/BackBtn'
 import PrintResume from '../components/PrintResume'
-import MobileResume from '../components/MobileResume'
 import './resume.css'
 
 export const query = graphql`
@@ -37,20 +36,6 @@ export default class ResumePage extends Component {
               <br />
             </div>
           </div>
-          {/* <div className="Resume-mobile">
-            <MobileResume />
-            <div className="content-center">
-              <a
-                href={this.props.data.pdfResume.publicURL}
-                download="andrew_pungprakearti_resume_2018.pdf"
-              >
-                Download Printable PDF Resume
-              </a>
-              <br />
-              <br />
-              <br />
-            </div>
-          </div> */}
         </React.Fragment>
       </Layout>
     )

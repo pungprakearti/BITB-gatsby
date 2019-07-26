@@ -17,13 +17,29 @@ export default class PrintResume extends Component {
         <div className="PrintResume-body-cont">
           <div className="PrintResume-right">
             <h3>Experience</h3>
-            <div className="PrintResume-faneron">
+            <div className="PrintResume-aleph jobs">
+              <h4>Web Developer</h4>
+              Aleph Inc.
+              <br />
+              February 2019 - Present
+              <br />
+              <ul className="PrintResume-list">
+                <li>
+                  Worked with non-profit organizations to create modern and
+                  responsive websites using React, Preact, and HTML markup
+                  with advanced SASS and CSS styling techniques.
+                </li>
+                <li>Implemented testing using Cypress.io for end to end testing.</li>
+                <li>Fixed issues with accessibility.</li>
+              </ul>
+            </div>
+            <div className="PrintResume-faneron jobs">
               <h4>Front End Web Development Intern</h4>
               Faneron Inc.
               <br />
               November 2018 - December 2018
               <br />
-              <ul>
+              <ul className="PrintResume-list">
                 <li>Refactored an existing production JAMstack code base.</li>
                 <li>
                   Fetched data from APIs, such as Contentful using GraphQL
@@ -33,33 +49,28 @@ export default class PrintResume extends Component {
                   Used Gatsby and React Portals to create reusable components.
                 </li>
                 <li>Created dynamic visualizations from user data.</li>
-                <li>
-                  Used React to create styled components that matched design
-                  mockups.
-                </li>
               </ul>
             </div>
-            <div className="PrintResume-nimble">
+            <div className="PrintResume-nimble jobs">
               <h4>Digital Effects Artist</h4>
               Nimble Collective
               <br />
               October 2016 - August 2017
               <br />
-              <ul>
+              <ul className="PrintResume-list">
                 <li>
                   Used compositing techniques to fix rendering issues and added
                   effects to compliment story telling.
                 </li>
-                <li>Worked remotely using proprietary cloud based platform.</li>
               </ul>
             </div>
-            <div className="PrintResume-pdi">
+            <div className="PrintResume-pdi jobs">
               <h4>Stereoscopic Image Finaling Lead / Surfacing Artist</h4>
               DreamWorks Animation
               <br />
               July 2008 - February 2015
               <br />
-              <ul>
+              <ul className="PrintResume-list">
                 <li>Worked on over 30 motion pictures.</li>
                 <li>
                   Used compositing techniques, 3D projection, digital paint, and
@@ -67,15 +78,7 @@ export default class PrintResume extends Component {
                   to shots.
                 </li>
                 <li>
-                  Fixed stereoscopic issues that caused distracting and
-                  nauseating effects when viewed.
-                </li>
-                <li>
-                  Textured 3D assets and rendered using proprietary renderer.
-                </li>
-                <li>
-                  Created, documented, and maintained several Python scripts and
-                  Linux tutorials on DreamWorks' internal website.
+                  Created, documented, and maintained several Python scripts and Linux tutorials.
                 </li>
               </ul>
             </div>
@@ -141,7 +144,8 @@ export default class PrintResume extends Component {
                   <br />
                   Git
                   <br />
-                  <div id="PrintResume-css">CSS</div>
+                  CSS
+                  <br />
                   SASS
                 </p>
               </div>
@@ -153,7 +157,7 @@ export default class PrintResume extends Component {
             2018 - 2019
             <ul>
               <li>
-                In person 17 week accelerated front end and back end web
+                In person 17 week accelerated frontend and backend web
                 development course.
               </li>
               <li>Created over 30 web applications in several frameworks.</li>
@@ -172,7 +176,7 @@ export default class PrintResume extends Component {
             </div>
             <h3 id="PrintResume-h-misc">Miscellaneous</h3>
             <div className="PrintResume-misc-cont">
-              Mentor with <a href="https://wearementorme.org/">Mentor Me</a>
+              Mentor with <a href="https://wearementorme.org/">Mentor Me</a> of Petaluma
               <br />
               2017 - Present
               <br />

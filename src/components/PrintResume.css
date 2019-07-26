@@ -139,7 +139,7 @@ li::before {
   content: '• ';
   color: var(--resume-p);
   position: relative;
-  top: 0;
+  top: 5px;
 }
 
 li {

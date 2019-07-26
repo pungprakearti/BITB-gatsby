@@ -138,6 +138,8 @@ li::before {
   line-height: 0px;
   content: '• ';
   color: var(--resume-p);
+  position: relative;
+  top: 0;
 }
 
 li {
@@ -146,21 +148,8 @@ li {
   text-indent: -0.7em;
 }
 
-.PrintResume-faneron {
-  margin-top: 25px;
-}
-
-.PrintResume-nimble,
-.PrintResume-pdi {
-  margin-top: 35px;
-}
-
 .PrintResume-misc-cont {
   margin-top: -5px;
-}
-
-.PrintResume-lipslut {
-  margin-bottom: 0px;
 }
 
 .PrintResume-jobly {
@@ -209,6 +198,14 @@ li {
 #PrintResume-css {
   text-indent: -3px;
   transform: translateY(3px) rotate(5deg);
+}
+
+.PrintResume-list {
+  margin-bottom: 0;
+}
+
+.jobs {
+  margin-bottom: 23px;
 }
 
 @media only screen and (max-width: 900px) {
